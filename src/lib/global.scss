@@ -1,8 +1,22 @@
 @use 'layout/layout';
 
+@font-face {
+  font-family: 'Clearface';
+  src: url('/fonts/ClearfaceStd-Regular.otf');
+}
+
 .tile {
   border-radius: layout.$spacing;
   overflow: hidden;
 
   outline: 1px solid black;
+  &:focus-visible {
+    outline: 2px solid cyan;
+  }
+}
+
+.user-select-none {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
