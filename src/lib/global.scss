@@ -1,9 +1,6 @@
-@use 'layout/layout';
+@use './global-defaults';
 
-@font-face {
-  font-family: 'Clearface';
-  src: url('/fonts/ClearfaceStd-Regular.otf');
-}
+@use 'layout/layout';
 
 
 .tile {
