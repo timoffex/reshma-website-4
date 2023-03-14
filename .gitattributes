@@ -1,4 +1,4 @@
-*.png,*.webp,*.gif,*.mp4,*.webm,*.svg filter=lfs diff=lfs merge=lfs -text
+*.png,*.jpeg,*.webp,*.gif,*.mp4,*.webm,*.svg filter=lfs diff=lfs merge=lfs -text
 *.otf filter=lfs diff=lfs merge=lfs -text
 *.png filter=lfs diff=lfs merge=lfs -text
 *.jpeg filter=lfs diff=lfs merge=lfs -text
