@@ -1,11 +1,10 @@
 <script lang="ts">
   import DescriptionFlyout from "$lib/flyout/DescriptionFlyout.svelte";
-import { currentFlyoutId } from "$lib/flyout/flyout";
+  import { currentFlyoutId } from "$lib/flyout/flyout";
 
   export let areaName: string;
 
   $: isShowingFlyout = $currentFlyoutId === areaName;
-  $: console.log(`Is showing ${areaName}? ${isShowingFlyout}`);
 
   const toggleFlyout = () => {
     currentFlyoutId.update((id) => id === areaName ? undefined : areaName);
