@@ -1,26 +1,25 @@
 <script>
-	import { GRIDA_3_SIZES } from "$lib/layout/image-sizing";
 	import ButtonTile from "$lib/widgets/ButtonTile.svelte";
 
   import AnimatedTigerWebp356 from './animated-tiger-356.webp';
   import AnimatedTigerWebp175 from './animated-tiger-175.webp';
-  import AnimatedTigerJpegSrcset from './animated-tiger.webp?w=356;175&jpeg&srcset&imagetools';
-  import AnimatedTigerJpeg from './animated-tiger.webp?w=175&jpeg&imagetools';
+  import AnimatedTigerJpeg175 from './animated-tiger.webp?w=175&jpeg&imagetools';
+	import TilePicture from "$lib/layout/TilePicture.svelte";
 
 </script>
 
 <ButtonTile areaName="aapi">
 
-  <picture slot="content">
-    <source srcset="{AnimatedTigerWebp356} 356w, {AnimatedTigerWebp175} 175w" type="image/webp">
-    <source srcset={AnimatedTigerJpegSrcset} type="image/jpeg">
-
-    <img
-        class="fill-cover image-color-on-hover"
-        sizes={GRIDA_3_SIZES}
-        alt="Tiger animation for AAPI Heritage Month"
-        src={AnimatedTigerJpeg} />
-  </picture>
+  <TilePicture slot="content"
+      imgClass="fill-cover image-color-on-hover"
+      picture={{
+        case: 'gridA-3',
+        alt: 'Tiger animation for AAPI Heritage Month',
+        webp356: AnimatedTigerWebp356,
+        webp175: AnimatedTigerWebp175,
+        jpeg356: AnimatedTigerWebp356,
+        jpeg175: AnimatedTigerJpeg175,
+      }} />
 
   <div slot="description">
     <p>
