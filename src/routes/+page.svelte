@@ -5,6 +5,7 @@
   import Navbar from '$lib/components/navigation/Navbar.svelte';
 	import EmailAddress from '$lib/widgets/EmailAddress.svelte';
 	import AnimatedTigerTile from '$lib/components/tiles/aapi-heritage/AnimatedTigerTile.svelte';
+	import FlyoutScrim from '$lib/flyout/FlyoutScrim.svelte';
 </script>
 
 <div class="main-content">
@@ -52,6 +53,7 @@
     </span>
   </div>
 </div>
+<FlyoutScrim />
 
 <style>
   .lets-collaborate {

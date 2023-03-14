@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { currentFlyoutId } from "$lib/flyout/flyout";
+  import DescriptionFlyout from "$lib/flyout/DescriptionFlyout.svelte";
+import { currentFlyoutId } from "$lib/flyout/flyout";
 
   export let areaName: string;
 
@@ -15,8 +16,11 @@
     class="grid-area-{areaName} tile image-button"
     on:click={toggleFlyout}
     data-focused-card={isShowingFlyout}>
-  <slot />
+  <slot name="content" />
 </button>
+<DescriptionFlyout {areaName}>
+  <slot name="description" />
+</DescriptionFlyout>
 
 <style lang="scss">
   .image-button {
