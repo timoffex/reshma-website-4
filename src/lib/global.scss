@@ -5,6 +5,7 @@
   src: url('/fonts/ClearfaceStd-Regular.otf');
 }
 
+
 .tile {
   border-radius: layout.$spacing;
   overflow: hidden;
@@ -13,6 +14,35 @@
   &:focus-visible {
     outline: 2px solid cyan;
   }
+}
+
+@media (any-hover: hover) {
+  .image-color-on-hover-2 {
+    filter: grayscale(100%);
+
+    &:hover,
+    :focus-visible &,
+    &:is([data-focused-card="true"] *) {
+      filter: none;
+    }
+  }
+
+  .image-color-on-hover {
+    filter: grayscale(100%) contrast(1.75);
+
+    &:hover,
+    :focus-visible &,
+    &:is([data-focused-card="true"] *) {
+     filter: none;
+    }
+  }
+}
+
+
+.fill-cover {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .user-select-none {

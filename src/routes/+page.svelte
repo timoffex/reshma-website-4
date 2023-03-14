@@ -4,6 +4,7 @@
 
   import Navbar from '$lib/components/navigation/Navbar.svelte';
 	import EmailAddress from '$lib/widgets/EmailAddress.svelte';
+	import AnimatedTigerTile from '$lib/components/tiles/aapi-heritage/AnimatedTigerTile.svelte';
 </script>
 
 <div class="main-content">
@@ -14,7 +15,7 @@
     <div class="grid-area-salem tile"></div>
     <div class="grid-area-sj-sharks tile"></div>
     <div class="grid-area-ninja tile"></div>
-    <div class="grid-area-aapi tile"></div>
+    <AnimatedTigerTile />
     <div class="grid-area-nymphs-tower tile"></div>
     <div class="grid-area-eyes tile"></div>
     <div class="grid-area-reel tile"></div>
