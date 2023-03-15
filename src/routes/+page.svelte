@@ -6,6 +6,7 @@
 	import AnimatedTigerTile from '$lib/components/tiles/aapi-heritage/AnimatedTigerTile.svelte';
 	import NinjaTile from '$lib/components/tiles/ninja/NinjaTile.svelte';
 	import NymphsTowerTile from '$lib/components/tiles/nymphs-tower/NymphsTowerTile.svelte';
+	import PlayMagazineTile from '$lib/components/tiles/play-magazine/PlayMagazineTile.svelte';
 	import SjSharksTile from '$lib/components/tiles/sj-sharks/SjSharksTile.svelte';
 	import FlyoutScrim from '$lib/flyout/FlyoutScrim.svelte';
 	import EmailAddress from '$lib/widgets/EmailAddress.svelte';
@@ -25,7 +26,7 @@
     <div class="grid-area-reel tile"></div>
     <div class="grid-area-pokemon tile"></div>
     <div class="grid-area-amiibo tile"></div>
-    <div class="grid-area-play-magazine tile"></div>
+    <PlayMagazineTile />
     <div class="grid-area-wattam tile"></div>
   </div>
 
