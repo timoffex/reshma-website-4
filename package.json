@@ -30,5 +30,8 @@
 		"vite": "^4.0.0",
 		"vite-imagetools": "^4.0.18"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@lottiefiles/lottie-player": "^1.7.1"
+	}
 }

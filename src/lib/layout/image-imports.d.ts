@@ -3,3 +3,8 @@ declare module '*&imagetools' {
   const out;
   export default out;
 }
+
+declare module '*.jsonlottie' {
+  const out: string;
+  export default out;
+}

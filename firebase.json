@@ -14,7 +14,7 @@
     ],
     "headers": [
       {
-        "source": "/**/*.@(mp4|webm|gif|webp|png|jpeg|otf|svg|lottie)",
+        "source": "/**/*.@(mp4|webm|gif|webp|png|jpeg|otf|svg|jsonlottie)",
         "headers": [
           {
             "key": "Cache-Control",

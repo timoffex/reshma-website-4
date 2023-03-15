@@ -11,13 +11,14 @@
 	import FlyoutScrim from '$lib/flyout/FlyoutScrim.svelte';
 	import EmailAddress from '$lib/widgets/EmailAddress.svelte';
 	import WattamTile from '$lib/components/tiles/wattam/WattamTile.svelte';
+	import YtGamingTile from '$lib/components/tiles/yt-gaming/YtGamingTile.svelte';
 </script>
 
 <div class="main-content">
   <Navbar />
 
   <div class="grid-container">
-    <div class="grid-area-yt-gaming tile"></div>
+    <YtGamingTile />
     <div class="grid-area-salem tile"></div>
     <SjSharksTile />
     <NinjaTile />
