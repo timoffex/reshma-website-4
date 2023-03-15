@@ -3,6 +3,7 @@ export type PictureA3 = {
 
   alt: string;
   
+  webp712: string,
   webp356: string,
   webp175: string,
   jpeg356: string,
