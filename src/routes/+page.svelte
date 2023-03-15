@@ -10,6 +10,7 @@
 	import SjSharksTile from '$lib/components/tiles/sj-sharks/SjSharksTile.svelte';
 	import FlyoutScrim from '$lib/flyout/FlyoutScrim.svelte';
 	import EmailAddress from '$lib/widgets/EmailAddress.svelte';
+	import WattamTile from '$lib/components/tiles/wattam/WattamTile.svelte';
 </script>
 
 <div class="main-content">
@@ -27,7 +28,7 @@
     <div class="grid-area-pokemon tile"></div>
     <div class="grid-area-amiibo tile"></div>
     <PlayMagazineTile />
-    <div class="grid-area-wattam tile"></div>
+    <WattamTile />
   </div>
 
   <div id="contact" class="lets-collaborate">

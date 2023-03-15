@@ -1,9 +1,9 @@
 <script lang="ts">
-  import type { PictureA3, PictureB1 } from "./TilePicture";
+  import type { PictureA3, PictureB1, PictureB2 } from "./TilePicture";
 
   export let imgClass: string;
   export let loading: "lazy"|undefined = undefined;
-  export let picture: PictureA3|PictureB1;
+  export let picture: PictureA3|PictureB1|PictureB2;
 </script>
 
 <picture>
@@ -64,6 +64,34 @@
       loading={loading} 
       alt={picture.alt}
       src={picture.jpeg87} />
+{:else if (picture.case === 'gridB-2')}
+  <source
+      type="image/webp"
+      srcset="{picture.webp356} 1x, {picture.webp712} 2x"
+      width=356
+      media="(min-width: calc(45rem + 16px))">
+
+  <source
+      type="image/webp"
+      srcset="{picture.webp175} 1x, {picture.webp356} 2x"
+      width=175>
+  
+  <source
+      type="image/jpeg"
+      srcset={picture.jpeg356}
+      width=356
+      media="(min-width: calc(45rem + 16px))">
+  
+  <source
+      type="image/jpeg"
+      srcset="{picture.jpeg175} 1x, {picture.jpeg356} 2x"
+      width=175>
+  
+  <img
+      class={imgClass}
+      loading={loading} 
+      alt={picture.alt}
+      src={picture.jpeg175} />
 {/if}
 
 </picture>

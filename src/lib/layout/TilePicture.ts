@@ -22,4 +22,17 @@ export type PictureB1 = {
 
   jpeg174: string,
   jpeg87: string,
-}
+};
+
+export type PictureB2 = {
+  case: 'gridB-2',
+
+  alt: string;
+
+  webp712: string,
+  webp356: string,
+  webp175: string,
+
+  jpeg356: string,
+  jpeg175: string,
+};
