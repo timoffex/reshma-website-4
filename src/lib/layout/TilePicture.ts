@@ -6,6 +6,20 @@ export type PictureA3 = {
   webp712: string,
   webp356: string,
   webp175: string,
+
   jpeg356: string,
   jpeg175: string,
 };
+
+export type PictureB1 = {
+  case: 'gridB-1',
+
+  alt: string;
+
+  webp348: string,
+  webp174: string,
+  webp87: string,
+
+  jpeg174: string,
+  jpeg87: string,
+}

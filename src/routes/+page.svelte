@@ -5,6 +5,7 @@
   import Navbar from '$lib/components/navigation/Navbar.svelte';
 	import AnimatedTigerTile from '$lib/components/tiles/aapi-heritage/AnimatedTigerTile.svelte';
 	import NinjaTile from '$lib/components/tiles/ninja/NinjaTile.svelte';
+	import NymphsTowerTile from '$lib/components/tiles/nymphs-tower/NymphsTowerTile.svelte';
 	import SjSharksTile from '$lib/components/tiles/sj-sharks/SjSharksTile.svelte';
 	import FlyoutScrim from '$lib/flyout/FlyoutScrim.svelte';
 	import EmailAddress from '$lib/widgets/EmailAddress.svelte';
@@ -19,7 +20,7 @@
     <SjSharksTile />
     <NinjaTile />
     <AnimatedTigerTile />
-    <div class="grid-area-nymphs-tower tile"></div>
+    <NymphsTowerTile />
     <div class="grid-area-eyes tile"></div>
     <div class="grid-area-reel tile"></div>
     <div class="grid-area-pokemon tile"></div>
