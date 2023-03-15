@@ -10,10 +10,12 @@
 
 </script>
 
-<ButtonTile areaName="ninja">
+<ButtonTile
+    areaName="ninja"
+    buttonClass="bg-black highlight:bg-dark-blue">
   <TilePicture
       slot="content"
-      imgClass="fill-contain black-background"
+      imgClass="fill-contain"
       picture={{
         case: 'gridA-3',
         alt: 'Ninja (streamer)',

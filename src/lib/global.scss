@@ -48,12 +48,17 @@
   height: 100%;
 }
 
-.black-background {
-  background-color: black;
-}
-
 .user-select-none {
   user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+}
+
+.bg-black { background-color: black; }
+.highlight\:bg-dark-blue {
+  &:hover,
+  &:focus-within,
+  &:is([data-focused-card="true"] *) {
+    background-color: #101835;
+  }
 }

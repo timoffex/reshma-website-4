@@ -3,7 +3,9 @@
   import { currentFlyoutId } from "$lib/flyout/flyout";
 
   export let areaName: string;
+  export let buttonClass: string|undefined = undefined;
 
+  $: extraButtonClasses = buttonClass ? ` ${buttonClass}` : '';
   $: isShowingFlyout = $currentFlyoutId === areaName;
 
   const toggleFlyout = () => {
@@ -12,7 +14,7 @@
 </script>
 
 <button
-    class="grid-area-{areaName} tile image-button"
+    class="grid-area-{areaName} tile image-button{extraButtonClasses}"
     on:click={toggleFlyout}
     data-focused-card={isShowingFlyout}>
   <slot name="content" />
