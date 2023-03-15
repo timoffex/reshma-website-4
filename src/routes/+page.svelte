@@ -12,6 +12,7 @@
 	import EmailAddress from '$lib/widgets/EmailAddress.svelte';
 	import WattamTile from '$lib/components/tiles/wattam/WattamTile.svelte';
 	import YtGamingTile from '$lib/components/tiles/yt-gaming/YtGamingTile.svelte';
+	import Eyes from '$lib/components/tiles/eyes/Eyes.svelte';
 </script>
 
 <div class="main-content">
@@ -24,7 +25,7 @@
     <NinjaTile />
     <AnimatedTigerTile />
     <NymphsTowerTile />
-    <div class="grid-area-eyes tile"></div>
+    <Eyes />
     <div class="grid-area-reel tile"></div>
     <div class="grid-area-pokemon tile"></div>
     <div class="grid-area-amiibo tile"></div>
