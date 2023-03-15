@@ -3,9 +3,10 @@
   import '$lib/layout/layout-styles.scss';
 
   import Navbar from '$lib/components/navigation/Navbar.svelte';
-	import EmailAddress from '$lib/widgets/EmailAddress.svelte';
 	import AnimatedTigerTile from '$lib/components/tiles/aapi-heritage/AnimatedTigerTile.svelte';
+	import SjSharksTile from '$lib/components/tiles/sj-sharks/SjSharksTile.svelte';
 	import FlyoutScrim from '$lib/flyout/FlyoutScrim.svelte';
+	import EmailAddress from '$lib/widgets/EmailAddress.svelte';
 </script>
 
 <div class="main-content">
@@ -14,7 +15,7 @@
   <div class="grid-container">
     <div class="grid-area-yt-gaming tile"></div>
     <div class="grid-area-salem tile"></div>
-    <div class="grid-area-sj-sharks tile"></div>
+    <SjSharksTile />
     <div class="grid-area-ninja tile"></div>
     <AnimatedTigerTile />
     <div class="grid-area-nymphs-tower tile"></div>

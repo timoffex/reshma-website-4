@@ -7,7 +7,6 @@
   import AnimatedTigerWebp175 from './animated-tiger-175.webp';
   import AnimatedTigerJpeg356 from './animated-tiger-356.webp?jpeg&imagetools';
   import AnimatedTigerJpeg175 from './animated-tiger-175.webp?jpeg&imagetools';
-
 </script>
 
 <ButtonTile areaName="aapi">
