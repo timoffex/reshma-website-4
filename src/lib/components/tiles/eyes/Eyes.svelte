@@ -1,5 +1,6 @@
 <script>
-	import Eyeball from '$lib/widgets/Eyeball.svelte';
+	import Eyeball from './Eyeball.svelte';
+
 	import { mousePosition } from '$lib/mouse-position';
 
   // TODO: On mobile, look around randomly.

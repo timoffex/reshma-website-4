@@ -1,5 +1,5 @@
 <script>
-  import "@lottiefiles/lottie-player";
+  if (typeof window !== 'undefined') import("@lottiefiles/lottie-player");
 
   import ButtonTile from "$lib/widgets/ButtonTile.svelte";
 </script>

@@ -1,4 +1,6 @@
 <script lang="ts">
+  import EyeballImage from './eyeball.png';
+
 	import { onMount } from "svelte";
   import { spring } from "svelte/motion";
 
@@ -21,7 +23,7 @@
       
       const m2 = diffX*diffX + diffY*diffY;
 
-      const maxOffset = rect.height / 4 - 5;
+      const maxOffset = rect.height * 0.19;
       if (m2 > maxOffset*maxOffset) {
         const m = Math.sqrt(m2);
         diffX *= maxOffset / m;
@@ -42,7 +44,7 @@
 <div class="container"
     bind:this={eyeballContainer} >
   <img
-      src="eyeball.svg"
+      src={EyeballImage}
       alt=""
       class="eyeball" />
   <svg
