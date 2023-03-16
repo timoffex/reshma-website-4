@@ -14,6 +14,7 @@
 	import YtGamingTile from '$lib/components/tiles/yt-gaming/YtGamingTile.svelte';
 	import Eyes from '$lib/components/tiles/eyes/Eyes.svelte';
 	import MotionGraphicReel from '$lib/components/tiles/motion-graphic-reel/MotionGraphicReel.svelte';
+	import PokemonCardTile from '$lib/components/tiles/pokemon-card/PokemonCardTile.svelte';
 </script>
 
 <div class="main-content">
@@ -28,7 +29,7 @@
     <NymphsTowerTile />
     <Eyes />
     <MotionGraphicReel />
-    <div class="grid-area-pokemon tile"></div>
+    <PokemonCardTile />
     <div class="grid-area-amiibo tile"></div>
     <PlayMagazineTile />
     <WattamTile />

@@ -1,52 +1,67 @@
 <script lang="ts">
-  import DescriptionFlyout from "$lib/flyout/DescriptionFlyout.svelte";
-  import { currentFlyoutId } from "$lib/flyout/flyout";
+	import DescriptionFlyout from '$lib/flyout/DescriptionFlyout.svelte';
+	import { currentFlyoutId } from '$lib/flyout/flyout';
 
-  export let areaName: string;
-  export let buttonClass: string|undefined = undefined;
+  /** The name of the grid area where to put the button. */
+	export let areaName: string;
 
-  $: extraButtonClasses = buttonClass ? ` ${buttonClass}` : '';
-  $: isShowingFlyout = $currentFlyoutId === areaName;
+  /** Additional global styles for the button. */
+	export let buttonClass: string | undefined = undefined;
 
-  const toggleFlyout = () => {
-    currentFlyoutId.update((id) => id === areaName ? undefined : areaName);
-  };
+  /** If set, this uses additional styling for buttons containing a FlipCard. */
+	export let card: boolean = false;
+
+	$: extraButtonClasses = buttonClass ? ` ${buttonClass}` : '';
+	$: isShowingFlyout = $currentFlyoutId === areaName;
+
+	const toggleFlyout = () => {
+		currentFlyoutId.update((id) => (id === areaName ? undefined : areaName));
+	};
 </script>
 
 <button
-    class="grid-area-{areaName} tile image-button{extraButtonClasses}"
-    on:click={toggleFlyout}
-    data-focused-card={isShowingFlyout}>
-  <slot name="content" />
+	class="grid-area-{areaName} tile image-button{extraButtonClasses}"
+	class:tile--no-outline={card}
+  class:card-button={card}
+	on:click={toggleFlyout}
+	data-focused-card={isShowingFlyout}
+>
+	<slot name="content" />
 </button>
 <DescriptionFlyout {areaName}>
-  <slot name="description" />
+	<slot name="description" />
 </DescriptionFlyout>
 
 <style lang="scss">
-  .image-button {
-    padding: 0;
-    border: none;
-    cursor: pointer;
+	.image-button {
+		padding: 0;
+		border: none;
+		cursor: pointer;
 
-    // For the overlay pseudo-element.
-    position: relative;
+		// For the overlay pseudo-element.
+		position: relative;
 
-    // Briefly dim the button on click.
-    &:active::after {
-      content: "";
-      pointer-events: none;
+		// Briefly dim the button on click.
+		&:active::after {
+			content: '';
+			pointer-events: none;
 
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
 
-      opacity: 0.2;
+			opacity: 0.2;
 
-      background-color: black;
-    }
+			background-color: black;
+		}
+	}
+
+  .card-button {
+    perspective: 1000px;
+    background: transparent;
+		overflow: visible;
   }
 </style>

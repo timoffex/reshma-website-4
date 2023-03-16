@@ -13,6 +13,12 @@
   }
 }
 
+.tile--no-outline {
+  &:not(:focus-visible) {
+    box-shadow: none;
+  }
+}
+
 @media (any-hover: hover) {
   .image-color-on-hover-2 {
     filter: grayscale(100%);
@@ -35,6 +41,10 @@
   }
 }
 
+.fill {
+  width: 100%;
+  height: 100%;
+}
 
 .fill-cover {
   object-fit: cover;
@@ -46,6 +56,10 @@
   object-fit: contain;
   width: 100%;
   height: 100%;
+}
+
+.rounded-border {
+  border-radius: layout.$spacing;
 }
 
 .user-select-none {
