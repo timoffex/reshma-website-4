@@ -22,7 +22,7 @@
 	<FlipCard slot="content">
 		<TilePicture
 			slot="front"
-			imgClass="fill rounder-border"
+			imgClass="fill rounded-border"
 			picture={{
 				case: 'gridB-1',
 				alt: 'Backside of a Pokemon card',
