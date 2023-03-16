@@ -97,6 +97,7 @@ $_gridA-col-width:
 .grid-area-pokemon       { grid-area: _gridB-area(7, 4, 2, 1); }
 .grid-desc-pokemon       { position: absolute; grid-row: 9; }
 .grid-area-amiibo        { grid-area: _gridB-area(9, 1, 2, 1); }
+.grid-desc-amiibo        { position: absolute; grid-row: 11; }
 .grid-area-play-magazine { grid-area: _gridB-area(9, 2, 2, 1); }
 .grid-desc-play-magazine { position: absolute; grid-row: 11; }
 .grid-area-wattam        { grid-area: _gridB-area(9, 3, 2, 2); }

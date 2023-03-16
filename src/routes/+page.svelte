@@ -15,6 +15,7 @@
 	import Eyes from '$lib/components/tiles/eyes/Eyes.svelte';
 	import MotionGraphicReel from '$lib/components/tiles/motion-graphic-reel/MotionGraphicReel.svelte';
 	import PokemonCardTile from '$lib/components/tiles/pokemon-card/PokemonCardTile.svelte';
+	import AmiiboCardTile from '$lib/components/tiles/amiibo/AmiiboCardTile.svelte';
 </script>
 
 <div class="main-content">
@@ -30,7 +31,7 @@
     <Eyes />
     <MotionGraphicReel />
     <PokemonCardTile />
-    <div class="grid-area-amiibo tile"></div>
+    <AmiiboCardTile />
     <PlayMagazineTile />
     <WattamTile />
   </div>
