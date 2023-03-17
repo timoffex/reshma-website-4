@@ -23,33 +23,21 @@
 		<TilePicture
 			slot="front"
 			imgClass="fill rounded-border"
-			picture={{
-				case: 'gridB-1',
-				alt: 'Backside of a Pokemon card',
-
-				webp348: BacksideWebp348,
-				webp174: BacksideWebp174,
-				webp87: BacksideWebp87,
-
-				jpeg174: BacksideJpeg174,
-				jpeg87: BacksideJpeg87
-			}}
+			alt="Backside of a Pokemon card"
+			subgrid="B"
+			columns={1}
+			webpWidthSrcset={`${BacksideWebp348} 348w, ${BacksideWebp174} 174w, ${BacksideWebp87} 87w`}
+			jpegWidthSrcset={`${BacksideJpeg174} 174w, ${BacksideJpeg87} 87w`}
 		/>
 
 		<TilePicture
 			slot="back"
 			imgClass="fill rounded-border"
-			picture={{
-				case: 'gridB-1',
-				alt: 'Custom Pokemon card for YouTuber GlitchxCity',
-
-				webp348: GlitchCityWebp348,
-				webp174: GlitchCityWebp174,
-				webp87: GlitchCityWebp87,
-
-				jpeg174: GlitchCityJpeg174,
-				jpeg87: GlitchCityJpeg87
-			}}
+			alt="Custom Pokemon card for YouTuber GlitchxCity"
+			subgrid="B"
+			columns={1}
+			webpWidthSrcset={`${GlitchCityWebp348} 348w, ${GlitchCityWebp174} 174w, ${GlitchCityWebp87} 87w`}
+			jpegWidthSrcset={`${GlitchCityJpeg174} 174w, ${GlitchCityJpeg87} 87w`}
 		/>
 	</FlipCard>
 

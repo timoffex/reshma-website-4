@@ -23,33 +23,21 @@
 		<TilePicture
 			slot="front"
 			imgClass="fill rounded-border"
-			picture={{
-				case: 'gridB-1',
-				alt: 'Backside of an Animal Crossing Amiibo card',
-
-				webp348: AmiiboBackWebp348,
-				webp174: AmiiboBackWebp174,
-				webp87: AmiiboBackWebp87,
-
-				jpeg174: AmiiboBackJpeg174,
-				jpeg87: AmiiboBackJpeg87
-			}}
+			alt="Backside of an Animal Crossing Amiibo card"
+			subgrid="B"
+			columns={1}
+			webpWidthSrcset={`${AmiiboBackWebp348} 348w, ${AmiiboBackWebp174} 174w, ${AmiiboBackWebp87} 87w`}
+			jpegWidthSrcset={`${AmiiboBackJpeg174} 174w, ${AmiiboBackJpeg87} 87w`}
 		/>
 
 		<TilePicture
 			slot="back"
 			imgClass="fill rounded-border"
-			picture={{
-				case: 'gridB-1',
-				alt: "Custom Amiibo card for QTCinderella's cat, Coots",
-
-				webp348: AmiiboFrontWebp348,
-				webp174: AmiiboFrontWebp174,
-				webp87: AmiiboFrontWebp87,
-
-				jpeg174: AmiiboFrontJpeg174,
-				jpeg87: AmiiboFrontJpeg87
-			}}
+			alt="Backside of an Animal Crossing Amiibo card"
+			subgrid="B"
+			columns={1}
+			webpWidthSrcset={`${AmiiboFrontWebp348} 348w, ${AmiiboFrontWebp174} 174w, ${AmiiboFrontWebp87} 87w`}
+			jpegWidthSrcset={`${AmiiboFrontJpeg174} 174w, ${AmiiboFrontJpeg87} 87w`}
 		/>
 	</FlipCard>
 
