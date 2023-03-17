@@ -31,24 +31,24 @@
 		// An element without a 3D transform is rendered as part of its
 		// parent element's plane, meaning backface-visibility doesn't
 		// apply!
-		transform: translate3d(0,0,0);
+		transform: translate3d(0, 0, 0);
 	}
 
 	.card-back {
-		display: none;
+		transform: rotateY(180deg) translateZ(-1px);
 	}
 
-	@media only screen and (any-hover: hover) {
-		.card-back {
-			display: block;
-			transform: rotateY(180deg) translateZ(-1px);
+	:global(:hover),
+	:global(:focus-visible) {
+		& > .container {
+			transform: rotateY(180deg);
 		}
+	}
 
-		:global(:hover),
-		:global(:focus-visible) {
-			& > .container {
-				transform: rotateY(180deg);
-			}
+	// If hover isn't available, flip when child of a focused card.
+	@media not screen and (any-hover: hover) {
+		:global([data-focused-card='true']) .container {
+			transform: rotateY(180deg);
 		}
 	}
 </style>
