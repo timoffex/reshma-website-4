@@ -12,7 +12,6 @@ const gridColumnWidthCalc = (numCols: number, mainWidthCalc: string) => {
   return `((${mainWidthCalc}) - ${gridGapLength} * (${numCols} - 1)) / ${numCols}`;
 };
 
-
 const gridSizesList = (colsInSubgrid: number, cols: number) => {
   const gridGaps = `${cols - 1}*${gridGapLength}`;
   const columnWidthCalc = (mainWidthCalc: string) => gridColumnWidthCalc(colsInSubgrid, mainWidthCalc);
@@ -27,6 +26,6 @@ const gridSizesList = (colsInSubgrid: number, cols: number) => {
     ` ${colVwsCalculation}`;
 };
 
-
+export const mainContentSizesList = `min(45rem, 100vw - ${mainMaximizedMarginX})`;
 export const gridASizesList = (cols: number) => gridSizesList(gridACols, cols);
 export const gridBSizesList = (cols: number) => gridSizesList(gridBCols, cols);

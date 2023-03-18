@@ -1,7 +1,4 @@
 <script>
-	import '$lib/global.scss';
-	import '$lib/layout/layout-styles.scss';
-
 	import Navbar from '$lib/components/navigation/Navbar.svelte';
 	import AnimatedTigerTile from '$lib/components/tiles/aapi-heritage/AnimatedTigerTile.svelte';
 	import NinjaTile from '$lib/components/tiles/ninja/NinjaTile.svelte';

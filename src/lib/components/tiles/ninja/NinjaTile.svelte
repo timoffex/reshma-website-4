@@ -21,7 +21,10 @@
 	/>
 
 	<div slot="description">
-		<p>Designed numerous YouTube thumbnails for eSports personality, Ninja.</p>
+		<p>
+			Designed numerous YouTube thumbnails for eSports personality, Ninja. You can see them
+			<a href="/ninja">here</a>.
+		</p>
 		<p>Agency: XX Artists</p>
 	</div>
 </ButtonTile>
