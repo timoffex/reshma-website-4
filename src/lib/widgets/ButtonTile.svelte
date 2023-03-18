@@ -1,6 +1,6 @@
 <script lang="ts">
 	import DescriptionFlyout from '$lib/flyout/DescriptionFlyout.svelte';
-	import { currentFlyoutId } from '$lib/flyout/flyout';
+	import { getFlyout } from '$lib/flyout/flyout';
 
   /** The name of the grid area where to put the button. */
 	export let areaName: string;
@@ -10,6 +10,8 @@
 
   /** If set, this uses additional styling for buttons containing a FlipCard. */
 	export let card: boolean = false;
+
+	const currentFlyoutId = getFlyout();
 
 	$: extraButtonClasses = buttonClass ? ` ${buttonClass}` : '';
 	$: isShowingFlyout = $currentFlyoutId === areaName;

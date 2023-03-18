@@ -1,7 +1,9 @@
 <script lang="ts">
-	import { currentFlyoutId } from "./flyout";
+	import { getFlyout } from "./flyout";
 
   export let areaName: string;
+
+  const currentFlyoutId = getFlyout();
 
   $: isOpen = $currentFlyoutId === areaName;
   $: visibility = isOpen ? 'visible' : 'hidden';

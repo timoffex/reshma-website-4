@@ -1,6 +1,7 @@
 <script lang="ts">
-	import { currentFlyoutId } from "./flyout";
+	import { getFlyout } from "./flyout";
 
+  const currentFlyoutId = getFlyout();
 
   $: isFlyoutOpen = $currentFlyoutId !== undefined;
   $: visibility = isFlyoutOpen ? 'visible' : 'hidden';

@@ -1,3 +1,12 @@
-import { writable } from "svelte/store";
+import { getContext, setContext } from "svelte";
+import { writable, type Writable } from "svelte/store";
 
-export const currentFlyoutId = writable<string|undefined>(undefined);
+const currentFlyoutIdSymbol = Symbol();
+
+export const setupFlyoutContext = () => {
+  setContext(currentFlyoutIdSymbol, writable(undefined));
+};
+
+export const getFlyout = (): Writable<string | undefined> => {
+  return getContext(currentFlyoutIdSymbol);
+};

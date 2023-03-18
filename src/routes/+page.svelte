@@ -1,4 +1,6 @@
 <script>
+	import { setupFlyoutContext } from '$lib/flyout/flyout';
+
 	import Navbar from '$lib/components/navigation/Navbar.svelte';
 	import AnimatedTigerTile from '$lib/components/tiles/aapi-heritage/AnimatedTigerTile.svelte';
 	import NinjaTile from '$lib/components/tiles/ninja/NinjaTile.svelte';
@@ -14,6 +16,8 @@
 	import PokemonCardTile from '$lib/components/tiles/pokemon-card/PokemonCardTile.svelte';
 	import AmiiboCardTile from '$lib/components/tiles/amiibo/AmiiboCardTile.svelte';
 	import SalemVideoTile from '$lib/components/tiles/salem/SalemVideoTile.svelte';
+
+	setupFlyoutContext();
 </script>
 
 <div class="main-content">
@@ -117,7 +121,7 @@
 		background-color: black;
 	}
 
-  .font-smaller {
-    font-size: 0.9em;
-  }
+	.font-smaller {
+		font-size: 0.9em;
+	}
 </style>
