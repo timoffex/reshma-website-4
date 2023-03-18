@@ -16,6 +16,7 @@
 	import MotionGraphicReel from '$lib/components/tiles/motion-graphic-reel/MotionGraphicReel.svelte';
 	import PokemonCardTile from '$lib/components/tiles/pokemon-card/PokemonCardTile.svelte';
 	import AmiiboCardTile from '$lib/components/tiles/amiibo/AmiiboCardTile.svelte';
+	import SalemVideoTile from '$lib/components/tiles/salem/SalemVideoTile.svelte';
 </script>
 
 <div class="main-content">
@@ -23,7 +24,7 @@
 
   <div class="grid-container">
     <YtGamingTile />
-    <div class="grid-area-salem tile"></div>
+    <SalemVideoTile />
     <SjSharksTile />
     <NinjaTile />
     <AnimatedTigerTile />
