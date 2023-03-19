@@ -48,7 +48,7 @@
 
 	<div class="slideshow">
 		<Slideshow
-			delayMs={3000}
+			delayMs={5000}
 			sizes={mainContentSizesList}
 			images={[
 				{
