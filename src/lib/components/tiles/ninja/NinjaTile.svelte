@@ -18,6 +18,7 @@
 		columns={3}
 		webpWidthSrcset={`${NinjaLogoWebp712} 712w, ${NinjaLogoWebp356} 356w, ${NinjaLogoWebp175} 175w`}
 		jpegWidthSrcset={`${NinjaLogoJpeg356} 356w, ${NinjaLogoJpeg175} 175w`}
+		jpegSrc={NinjaLogoJpeg175}
 	/>
 
 	<div slot="description">

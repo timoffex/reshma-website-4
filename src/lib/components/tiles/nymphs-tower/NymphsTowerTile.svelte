@@ -20,6 +20,7 @@
 		columns={1}
 		webpWidthSrcset={`${NymphsTowerWebp256} 256w, ${NymphsTowerWebp174} 174w, ${NymphsTowerWebp87} 87w`}
 		jpegWidthSrcset={`${NymphsTowerJpeg174} 174w, ${NymphsTowerJpeg87} 87w`}
+		jpegSrc={NymphsTowerJpeg87}
 	/>
 
 	<div slot="description">

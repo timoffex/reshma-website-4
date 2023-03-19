@@ -19,5 +19,6 @@
 		columns={3}
 		webpWidthSrcset={`${ReshmaWebp720} 720w, ${ReshmaWebp356} 356w, ${ReshmaWebp175} 175w`}
 		jpegWidthSrcset={`${ReshmaJpeg356} 356w, ${ReshmaJpeg175} 175w`}
+		jpegSrc={ReshmaJpeg175}
 	/>
 </ButtonTile>

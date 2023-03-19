@@ -28,6 +28,7 @@
 			columns={1}
 			webpWidthSrcset={`${AmiiboBackWebp348} 348w, ${AmiiboBackWebp174} 174w, ${AmiiboBackWebp87} 87w`}
 			jpegWidthSrcset={`${AmiiboBackJpeg174} 174w, ${AmiiboBackJpeg87} 87w`}
+			jpegSrc={AmiiboBackJpeg87}
 		/>
 
 		<TilePicture
@@ -38,6 +39,7 @@
 			columns={1}
 			webpWidthSrcset={`${AmiiboFrontWebp348} 348w, ${AmiiboFrontWebp174} 174w, ${AmiiboFrontWebp87} 87w`}
 			jpegWidthSrcset={`${AmiiboFrontJpeg174} 174w, ${AmiiboFrontJpeg87} 87w`}
+			jpegSrc={AmiiboFrontJpeg87}
 		/>
 	</FlipCard>
 

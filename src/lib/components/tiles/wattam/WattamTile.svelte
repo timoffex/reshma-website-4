@@ -20,6 +20,7 @@
 		columns={2}
 		webpWidthSrcset={`${WattamWebp712} 712w, ${WattamWebp356} 356w, ${WattamWebp175} 175w`}
 		jpegWidthSrcset={`${WattamJpeg356} 356w, ${WattamJpeg175} 175w`}
+		jpegSrc={WattamJpeg175}
 	/>
 
 	<div slot="description">

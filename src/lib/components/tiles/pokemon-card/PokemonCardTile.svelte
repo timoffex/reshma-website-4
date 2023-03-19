@@ -28,6 +28,7 @@
 			columns={1}
 			webpWidthSrcset={`${BacksideWebp348} 348w, ${BacksideWebp174} 174w, ${BacksideWebp87} 87w`}
 			jpegWidthSrcset={`${BacksideJpeg174} 174w, ${BacksideJpeg87} 87w`}
+			jpegSrc={BacksideJpeg87}
 		/>
 
 		<TilePicture
@@ -38,6 +39,7 @@
 			columns={1}
 			webpWidthSrcset={`${GlitchCityWebp348} 348w, ${GlitchCityWebp174} 174w, ${GlitchCityWebp87} 87w`}
 			jpegWidthSrcset={`${GlitchCityJpeg174} 174w, ${GlitchCityJpeg87} 87w`}
+			jpegSrc={GlitchCityJpeg87}
 		/>
 	</FlipCard>
 

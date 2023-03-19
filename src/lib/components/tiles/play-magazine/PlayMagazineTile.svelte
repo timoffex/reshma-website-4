@@ -20,6 +20,7 @@
 		columns={1}
 		webpWidthSrcset={`${PlayMagazineWebp348} 348w, ${PlayMagazineWebp174} 174w, ${PlayMagazineWebp87} 87w`}
 		jpegWidthSrcset={`${PlayMagazineJpeg174} 174w, ${PlayMagazineJpeg87} 87w`}
+		jpegSrc={PlayMagazineJpeg87}
 	/>
 
 	<div slot="description">
