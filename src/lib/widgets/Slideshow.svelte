@@ -3,6 +3,7 @@
 
 	type SlideshowImage = {
 		alt: string;
+		defaultSrc: string;
 		webpSrcset: string;
 		jpegSrcset: string;
 	};
@@ -37,14 +38,14 @@
 		<picture>
 			<source type="image/webp" srcset={prev.webpSrcset} {sizes} />
 			<source type="image/jpeg" srcset={prev.jpegSrcset} {sizes} />
-			<img src="" alt={prev.alt} class="slide-old" />
+			<img src={prev.defaultSrc} alt={prev.alt} class="slide-old" />
 		</picture>
 	{/key}
 	{#key currIdx}
 		<picture>
 			<source type="image/webp" srcset={curr.webpSrcset} {sizes} />
 			<source type="image/jpeg" srcset={curr.jpegSrcset} {sizes} />
-			<img src="" alt={curr.alt} class="slide-new" />
+			<img src={curr.defaultSrc} alt={curr.alt} class="slide-new" />
 		</picture>
 	{/key}
 </div>

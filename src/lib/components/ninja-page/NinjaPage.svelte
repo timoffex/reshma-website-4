@@ -8,30 +8,39 @@
 
 	import MinecraftWebpSrcset from './slides/minecraft.png?w=1000;800;600&webp&srcset&imagetools';
 	import MinecraftJpegSrcset from './slides/minecraft.png?w=1000;800;600&jpeg&srcset&imagetools';
+	import MinecraftJpeg from './slides/minecraft.png?w=600&jpeg&imagetools'
 
 	import VictoryRoyaleWebpSrcset from './slides/victory-royale.png?w=1000;800;600&webp&srcset&imagetools';
 	import VictoryRoyaleJpegSrcset from './slides/victory-royale.png?w=1000;800;600&jpeg&srcset&imagetools';
+	import VictoryRoyaleJpeg from './slides/victory-royale.png?w=600&jpeg&imagetools'
 
 	import LotsOfDamageWebpSrcset from './slides/lots-of-damage.png?w=1000;800;600&webp&srcset&imagetools';
 	import LotsOfDamageJpegSrcset from './slides/lots-of-damage.png?w=1000;800;600&jpeg&srcset&imagetools';
+	import LotsOfDamageJpeg from './slides/lots-of-damage.png?w=600&jpeg&imagetools'
 
 	import FirstTimePlayingWebpSrcset from './slides/first-time.png?w=1000;800;600&webp&srcset&imagetools';
 	import FirstTimePlayingJpegSrcset from './slides/first-time.png?w=1000;800;600&jpeg&srcset&imagetools';
+	import FirstTimePlayingJpeg from './slides/first-time.png?w=600&jpeg&imagetools'
 
 	import UnstoppableWebpSrcset from './slides/unstoppable.png?w=1000;800;600&webp&srcset&imagetools';
 	import UnstoppableJpegSrcset from './slides/unstoppable.png?w=1000;800;600&jpeg&srcset&imagetools';
+	import UnstoppableJpeg from './slides/unstoppable.png?w=600&jpeg&imagetools'
 
 	import TiktokStreamerWebpSrcset from './slides/tiktok-streamer.png?w=1000;800;600&webp&srcset&imagetools';
 	import TiktokStreamerJpegSrcset from './slides/tiktok-streamer.png?w=1000;800;600&jpeg&srcset&imagetools';
+	import TiktokStreamerJpeg from './slides/tiktok-streamer.png?w=600&jpeg&imagetools'
 
 	import RickAndMortyWebpSrcset from './slides/rick-and-morty.png?w=1000;800;600&webp&srcset&imagetools';
 	import RickAndMortyJpegSrcset from './slides/rick-and-morty.png?w=1000;800;600&jpeg&srcset&imagetools';
+	import RickAndMortyJpeg from './slides/rick-and-morty.png?w=600&jpeg&imagetools'
 
 	import CallOfDutyWebpSrcset from './slides/warzone.png?w=1000;800;600&webp&srcset&imagetools';
 	import CallOfDutyJpegSrcset from './slides/warzone.png?w=1000;800;600&jpeg&srcset&imagetools';
+	import CallOfDutyJpeg from './slides/warzone.png?w=600&jpeg&imagetools'
 
 	import EpicWeaponWebpSrcset from './slides/epic-weapon.png?w=1000;800;600&webp&srcset&imagetools';
 	import EpicWeaponJpegSrcset from './slides/epic-weapon.png?w=1000;800;600&jpeg&srcset&imagetools';
+	import EpicWeaponJpeg from './slides/epic-weapon.png?w=600&jpeg&imagetools'
 </script>
 
 <div class="main-content">
@@ -44,46 +53,55 @@
 			images={[
 				{
 					alt: '"Minecraft" thumbnail',
+					defaultSrc: MinecraftJpeg,
 					webpSrcset: MinecraftWebpSrcset,
 					jpegSrcset: MinecraftJpegSrcset
 				},
 				{
 					alt: '"Victory Royale" thumbnail',
+					defaultSrc: VictoryRoyaleJpeg,
 					webpSrcset: VictoryRoyaleWebpSrcset,
 					jpegSrcset: VictoryRoyaleJpegSrcset
 				},
 				{
 					alt: '"Lots of Damage" thumbnail',
+					defaultSrc: LotsOfDamageJpeg,
 					webpSrcset: LotsOfDamageWebpSrcset,
 					jpegSrcset: LotsOfDamageJpegSrcset
 				},
 				{
 					alt: '"First Time Playing" thumbnail',
+					defaultSrc: FirstTimePlayingJpeg,
 					webpSrcset: FirstTimePlayingWebpSrcset,
 					jpegSrcset: FirstTimePlayingJpegSrcset
 				},
 				{
 					alt: '"Unstoppable" thumbnail',
+					defaultSrc: UnstoppableJpeg,
 					webpSrcset: UnstoppableWebpSrcset,
 					jpegSrcset: UnstoppableJpegSrcset
 				},
 				{
 					alt: '"Tiktok Streamer!?" thumbnail',
+					defaultSrc: TiktokStreamerJpeg,
 					webpSrcset: TiktokStreamerWebpSrcset,
 					jpegSrcset: TiktokStreamerJpegSrcset
 				},
 				{
 					alt: '"Rick and Morty" thumbnail',
+					defaultSrc: RickAndMortyJpeg,
 					webpSrcset: RickAndMortyWebpSrcset,
 					jpegSrcset: RickAndMortyJpegSrcset
 				},
 				{
 					alt: '"Call of Duty Warzone" thumbnail',
+					defaultSrc: CallOfDutyJpeg,
 					webpSrcset: CallOfDutyWebpSrcset,
 					jpegSrcset: CallOfDutyJpegSrcset
 				},
 				{
 					alt: '"Epic Weapon" thumbnail',
+					defaultSrc: EpicWeaponJpeg,
 					webpSrcset: EpicWeaponWebpSrcset,
 					jpegSrcset: EpicWeaponJpegSrcset
 				}
