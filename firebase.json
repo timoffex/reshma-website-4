@@ -8,6 +8,10 @@
     ],
     "rewrites": [
       {
+        "source": "ninja",
+        "destination": "/ninja.html"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }
