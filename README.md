@@ -1,22 +1,19 @@
-# create-svelte
+Sveltekit + Firebase implementation for https://reshma.page/.
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+I originally started with plain HTML and CSS files (not in this repository's
+git history), wanting to keep it simple, but the JS code for even a little bit
+of interactivity was too ugly. The files were also growing too large to
+maintain, so I moved to React, using Parcel as the build system (not in this
+repository's git history).
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+React is great, but then I wanted to try Svelte, so I rewrote the app. This
+also gave me an opportunity to structure the code a little better, which was
+a plus. And it turns out Vite is way better than Parcel (which is way better
+than Webpack, which was my previous experience).
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Once, at the beginning: `npm install`
 
 ```bash
 npm run dev
@@ -27,12 +24,18 @@ npm run dev -- --open
 
 ## Building
 
-To create a production version of your app:
-
 ```bash
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+## Deploying
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+After building:
+
+```bash
+# To a temporary URL:
+firebase hosting:channel:deploy
+
+# To prod:
+firebase deploy
+```
