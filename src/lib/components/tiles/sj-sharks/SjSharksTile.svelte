@@ -21,4 +21,9 @@
 		jpegWidthSrcset={`${ReshmaJpeg356} 356w, ${ReshmaJpeg175} 175w`}
 		jpegSrc={ReshmaJpeg175}
 	/>
+	<div slot="description">
+		<p>Reshma Zachariah is a Motion Design Artist and Illustrator based in California.</p>
+		<p>Learn about her works by clicking anywhere on this page.</p>
+		<p>@reshmushroom on all socials.</p>
+	</div>
 </ButtonTile>
