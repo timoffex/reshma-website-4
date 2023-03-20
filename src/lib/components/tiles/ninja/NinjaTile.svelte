@@ -16,6 +16,8 @@
 		alt="Ninja (streamer)"
 		subgrid="A"
 		columns={3}
+		mobileWebp={NinjaLogoWebp356}
+		mobileJpeg={NinjaLogoJpeg356}
 		webpWidthSrcset={`${NinjaLogoWebp712} 712w, ${NinjaLogoWebp356} 356w, ${NinjaLogoWebp175} 175w`}
 		jpegWidthSrcset={`${NinjaLogoJpeg356} 356w, ${NinjaLogoJpeg175} 175w`}
 		jpegSrc={NinjaLogoJpeg175}

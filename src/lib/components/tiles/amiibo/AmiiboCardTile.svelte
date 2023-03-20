@@ -26,6 +26,8 @@
 			alt="Backside of an Animal Crossing Amiibo card"
 			subgrid="B"
 			columns={1}
+			mobileWebp={AmiiboBackWebp174}
+			mobileJpeg={AmiiboBackJpeg174}
 			webpWidthSrcset={`${AmiiboBackWebp348} 348w, ${AmiiboBackWebp174} 174w, ${AmiiboBackWebp87} 87w`}
 			jpegWidthSrcset={`${AmiiboBackJpeg174} 174w, ${AmiiboBackJpeg87} 87w`}
 			jpegSrc={AmiiboBackJpeg87}
@@ -37,6 +39,8 @@
 			alt="Backside of an Animal Crossing Amiibo card"
 			subgrid="B"
 			columns={1}
+			mobileWebp={AmiiboFrontWebp174}
+			mobileJpeg={AmiiboFrontJpeg174}
 			webpWidthSrcset={`${AmiiboFrontWebp348} 348w, ${AmiiboFrontWebp174} 174w, ${AmiiboFrontWebp87} 87w`}
 			jpegWidthSrcset={`${AmiiboFrontJpeg174} 174w, ${AmiiboFrontJpeg87} 87w`}
 			jpegSrc={AmiiboFrontJpeg87}

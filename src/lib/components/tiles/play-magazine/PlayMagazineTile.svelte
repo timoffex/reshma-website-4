@@ -18,6 +18,8 @@
 		alt="PLAY! Magazine"
 		subgrid="B"
 		columns={1}
+		mobileWebp={PlayMagazineWebp174}
+		mobileJpeg={PlayMagazineJpeg174}
 		webpWidthSrcset={`${PlayMagazineWebp348} 348w, ${PlayMagazineWebp174} 174w, ${PlayMagazineWebp87} 87w`}
 		jpegWidthSrcset={`${PlayMagazineJpeg174} 174w, ${PlayMagazineJpeg87} 87w`}
 		jpegSrc={PlayMagazineJpeg87}

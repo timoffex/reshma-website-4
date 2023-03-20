@@ -18,6 +18,8 @@
 		alt="Wattam"
 		subgrid="B"
 		columns={2}
+		mobileWebp={WattamWebp356}
+		mobileJpeg={WattamJpeg356}
 		webpWidthSrcset={`${WattamWebp712} 712w, ${WattamWebp356} 356w, ${WattamWebp175} 175w`}
 		jpegWidthSrcset={`${WattamJpeg356} 356w, ${WattamJpeg175} 175w`}
 		jpegSrc={WattamJpeg175}

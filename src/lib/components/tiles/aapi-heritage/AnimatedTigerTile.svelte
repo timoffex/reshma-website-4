@@ -16,6 +16,8 @@
 		alt="Tiger animation for AAPI Heritage Month"
 		subgrid="A"
 		columns={3}
+		mobileWebp={AnimatedTigerWebp356}
+		mobileJpeg={AnimatedTigerJpeg356}
 		webpWidthSrcset={`${AnimatedTigerWebp600} 600w, ${AnimatedTigerWebp356} 356w, ${AnimatedTigerWebp175} 175w`}
 		jpegWidthSrcset={`${AnimatedTigerJpeg356} 356w, ${AnimatedTigerJpeg175} 175w`}
 		jpegSrc={AnimatedTigerJpeg175}

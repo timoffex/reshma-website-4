@@ -26,6 +26,8 @@
 			alt="Backside of a Pokemon card"
 			subgrid="B"
 			columns={1}
+			mobileWebp={BacksideWebp174}
+			mobileJpeg={BacksideJpeg174}
 			webpWidthSrcset={`${BacksideWebp348} 348w, ${BacksideWebp174} 174w, ${BacksideWebp87} 87w`}
 			jpegWidthSrcset={`${BacksideJpeg174} 174w, ${BacksideJpeg87} 87w`}
 			jpegSrc={BacksideJpeg87}
@@ -37,6 +39,8 @@
 			alt="Custom Pokemon card for YouTuber GlitchxCity"
 			subgrid="B"
 			columns={1}
+			mobileWebp={GlitchCityWebp174}
+			mobileJpeg={GlitchCityJpeg174}
 			webpWidthSrcset={`${GlitchCityWebp348} 348w, ${GlitchCityWebp174} 174w, ${GlitchCityWebp87} 87w`}
 			jpegWidthSrcset={`${GlitchCityJpeg174} 174w, ${GlitchCityJpeg87} 87w`}
 			jpegSrc={GlitchCityJpeg87}

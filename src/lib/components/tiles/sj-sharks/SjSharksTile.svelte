@@ -17,6 +17,8 @@
 		alt="Reshma painting at an SJ Sharks game"
 		subgrid="A"
 		columns={3}
+		mobileWebp={ReshmaWebp356}
+		mobileJpeg={ReshmaJpeg356}
 		webpWidthSrcset={`${ReshmaWebp720} 720w, ${ReshmaWebp356} 356w, ${ReshmaWebp175} 175w`}
 		jpegWidthSrcset={`${ReshmaJpeg356} 356w, ${ReshmaJpeg175} 175w`}
 		jpegSrc={ReshmaJpeg175}

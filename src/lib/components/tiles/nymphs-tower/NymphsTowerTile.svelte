@@ -18,6 +18,8 @@
 		alt="Nymph's Tower game recording"
 		subgrid="B"
 		columns={1}
+		mobileWebp={NymphsTowerWebp174}
+		mobileJpeg={NymphsTowerJpeg174}
 		webpWidthSrcset={`${NymphsTowerWebp256} 256w, ${NymphsTowerWebp174} 174w, ${NymphsTowerWebp87} 87w`}
 		jpegWidthSrcset={`${NymphsTowerJpeg174} 174w, ${NymphsTowerJpeg87} 87w`}
 		jpegSrc={NymphsTowerJpeg87}
