@@ -49,8 +49,11 @@
 
 	<div slot="description">
 		<p>
-			I illustrated custom Amiibo cards for a social activation on YouTube Gaming's twitter. This is
-			QTCinderella's cat, Coots.
+			I illustrated <a
+				target="_blank"
+				href="https://www.essentiallysports.com/esports-news-animal-crossing-new-horizons-on-the-third-anniversary-of-the-game-pets-of-streamers-including-sykkuno-valkyrae-and-more-joins-the-villagers/"
+				>custom Amiibo cards</a
+			> for a social activation on YouTube Gaming's twitter. This is QTCinderella's cat, Coots.
 		</p>
 	</div>
 </ButtonTile>
