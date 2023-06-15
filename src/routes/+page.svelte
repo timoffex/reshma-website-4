@@ -16,6 +16,7 @@
 	import PokemonCardTile from '$lib/components/tiles/pokemon-card/PokemonCardTile.svelte';
 	import AmiiboCardTile from '$lib/components/tiles/amiibo/AmiiboCardTile.svelte';
 	import SalemVideoTile from '$lib/components/tiles/salem/SalemVideoTile.svelte';
+	import MusicTile from '$lib/components/tiles/music/MusicTile.svelte';
 
 	setupFlyoutContext();
 </script>
@@ -52,6 +53,11 @@
 			</span>
 		</span>
 	</div>
+
+	<div class="grid-container">
+		<MusicTile />
+		<div class="tile grid-area-music-blank"></div>
+	</div> 
 
 	<div id="contact" class="lets-collaborate">
 		<span class="lets-collaborate__1">let's</span>
