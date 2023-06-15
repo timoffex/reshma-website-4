@@ -30,11 +30,17 @@ npm run build
 
 ## Deploying
 
+First, log in to Firebase
+
+```bash
+firebase login  # `--reauth` to force 
+```
+
 After building:
 
 ```bash
 # To a temporary URL:
-firebase hosting:channel:deploy
+firebase hosting:channel:deploy dev
 
 # To prod:
 firebase deploy
