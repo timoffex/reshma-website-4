@@ -11,6 +11,7 @@
 	<Navbar />
 </div>
 
+<!-- svelte-ignore a11y-media-has-caption -->
 <video
 	class="full-bleed-1920"
 	controls
