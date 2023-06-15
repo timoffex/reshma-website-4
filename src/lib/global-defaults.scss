@@ -7,4 +7,8 @@ html {
   background-color: #e5e5e5;
   font-family: 'Roboto Mono', sans-serif;
   scroll-behavior: smooth;
+
+  // https://stackoverflow.com/questions/5303263/fix-font-size-issue-on-mobile-safari-iphone-where-text-is-rendered-inconsisten
+  // https://github.com/ampproject/amphtml/issues/449
+  -webkit-text-size-adjust: 100%;
 }
