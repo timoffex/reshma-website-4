@@ -54,6 +54,7 @@
 	Third Eye Blind &#x2726;
 	Soundgarden &#x2726;
 	311 &#x2726;
+	Hoobastank &#x2726;
 	The Used &#x2726;
 	Michael Bubl&eacute; &#x2726;
 	WeTransfer &#x2726;
@@ -63,7 +64,6 @@
 	Brie Larson &#x2726;
 	Lilly Singh &#x2726;
 	Roblox Splash's Virtual Influencer Kai &#x2726;
-	Riot Games - WORLDS 2022 &#x2726;&nbsp;
 </MarqueeText>
 
 <div class="main-content">
