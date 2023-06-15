@@ -38,8 +38,12 @@
 		<AmiiboCardTile />
 		<PlayMagazineTile />
 		<WattamTile />
+		<div class="tile grid-area-music-blank bg-black color-white" style="position: relative;">
+			<span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+				(future project)
+			</span>
+		</div>
 		<MusicTile />
-		<div class="tile grid-area-music-blank"></div>
 	</div> 
 </div>
 
