@@ -103,7 +103,5 @@ $_gridA-col-width:
 .grid-area-wattam        { grid-area: _gridB-area(9, 3, 2, 2); }
 .grid-desc-wattam        { position: absolute; grid-row: 11; }
 
-
-// Second grid, after client list.
-.grid-area-music        { grid-area: _gridA-area(1, 1, 2, 2); }
-.grid-area-music-blank  { grid-area: _gridA-area(1, 3, 2, 4); }
+.grid-area-music        { grid-area: _gridA-area(11, 1, 2, 2); }
+.grid-area-music-blank  { grid-area: _gridA-area(11, 3, 2, 4); }

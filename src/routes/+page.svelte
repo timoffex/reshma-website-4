@@ -17,6 +17,7 @@
 	import AmiiboCardTile from '$lib/components/tiles/amiibo/AmiiboCardTile.svelte';
 	import SalemVideoTile from '$lib/components/tiles/salem/SalemVideoTile.svelte';
 	import MusicTile from '$lib/components/tiles/music/MusicTile.svelte';
+	import MarqueeText from '$lib/widgets/MarqueeText.svelte';
 
 	setupFlyoutContext();
 </script>
@@ -37,28 +38,35 @@
 		<AmiiboCardTile />
 		<PlayMagazineTile />
 		<WattamTile />
-	</div>
-
-	<div class="tile client-list">
-		clients include:<br />
-		Universal Music Group, YouTube Gaming, YouTube Shorts, YouTube (#MinecraftMuseum, Pride 2022, 2021
-		&amp; 2020, Kids &amp; Family),
-		<span class="font-smaller">
-			XQ Institute, Elizabeth Taylor AIDS Foundation, San Jos&eacute; Sharks, Third Eye Blind,
-			Soundgarden, 311, The Used, Michael Bubl&eacute;, WeTransfer, Robinhood, Ninja, <span
-				class="font-smaller"
-			>
-				Lee Trink (FaZe Clan), Brie Larson, Lilly Singh, Roblox Splash's Virtual Influencer Kai,
-				Riot Games - WORLDS 2022
-			</span>
-		</span>
-	</div>
-
-	<div class="grid-container">
 		<MusicTile />
 		<div class="tile grid-area-music-blank"></div>
 	</div> 
+</div>
 
+<MarqueeText animationSeconds={60}>
+	Universal Music Group &#x2726;
+	YouTube Gaming &#x2726;
+	YouTube Shorts &#x2726;
+	YouTube (#MinecraftMuseum, Pride 2022, 2021 &amp; 2020, Kids &amp; Family) &#x2726;
+	XQ Institute &#x2726;
+	Elizabeth Taylor AIDS Foundation &#x2726;
+	San Jos&eacute; Sharks &#x2726;
+	Third Eye Blind &#x2726;
+	Soundgarden &#x2726;
+	311 &#x2726;
+	The Used &#x2726;
+	Michael Bubl&eacute; &#x2726;
+	WeTransfer &#x2726;
+	Robinhood &#x2726;
+	Ninja &#x2726;
+	Lee Trink (FaZe Clan) &#x2726;
+	Brie Larson &#x2726;
+	Lilly Singh &#x2726;
+	Roblox Splash's Virtual Influencer Kai &#x2726;
+	Riot Games - WORLDS 2022 &#x2726;&nbsp;
+</MarqueeText>
+
+<div class="main-content">
 	<div id="contact" class="lets-collaborate">
 		<span class="lets-collaborate__1">let's</span>
 		<br />
@@ -118,16 +126,5 @@
 		margin-top: 1rem;
 		font-size: 0.5rem;
 		color: #1e1e1e;
-	}
-
-	.client-list {
-		padding: 0.5rem;
-		text-align: right;
-		color: white;
-		background-color: black;
-	}
-
-	.font-smaller {
-		font-size: 0.9em;
 	}
 </style>
