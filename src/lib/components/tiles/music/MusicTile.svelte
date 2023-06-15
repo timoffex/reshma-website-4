@@ -13,10 +13,11 @@
 	<TilePicture
 		imgClass="fill-cover"
 		alt="Music Clients"
+		loading="lazy"
 		subgrid="A"
 		columns={2}
-		mobileWebp={RecordPlayerWebp135}
-		mobileJpeg={RecordPlayerJpeg135}
+		mobileWebp={RecordPlayerWebp270}
+		mobileJpeg={RecordPlayerJpeg270}
 		webpWidthSrcset={`${RecordPlayerWebp540} 540w, ${RecordPlayerWebp270} 270w, ${RecordPlayerWebp135} 135w`}
 		jpegWidthSrcset={`${RecordPlayerJpeg540} 540w, ${RecordPlayerJpeg270} 270w, ${RecordPlayerJpeg135} 135w`}
 		jpegSrc={RecordPlayerJpeg135}
