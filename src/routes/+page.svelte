@@ -67,7 +67,7 @@
 	Lee Trink (FaZe Clan) &#x2726;
 	Brie Larson &#x2726;
 	Lilly Singh &#x2726;
-	Roblox Splash's Virtual Influencer Kai &#x2726;
+	Roblox Splash's Virtual Influencer Kai &#x2726;&nbsp;
 </MarqueeText>
 
 <div class="main-content">
