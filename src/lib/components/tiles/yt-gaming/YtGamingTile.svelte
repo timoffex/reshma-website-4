@@ -2,7 +2,11 @@
   if (typeof window !== 'undefined') import("@lottiefiles/lottie-player");
 
   import ButtonTile from "$lib/widgets/ButtonTile.svelte";
+
+  const LOTTIE_PATH = "yt-gaming-logo.jsonlottie";
 </script>
+
+<link rel="preload" href={LOTTIE_PATH} as="fetch" />
 
 <ButtonTile
     areaName="yt-gaming"
@@ -11,7 +15,7 @@
       slot="content"
       autoplay
       loop
-      src="yt-gaming-logo.jsonlottie"
+      src={LOTTIE_PATH}
       class="fill image-color-on-hover">
   </lottie-player>
 
