@@ -40,6 +40,10 @@
 
 	// On mount (so in JavaScript) render the image's blurhash while it loads.
 	onMount(() => {
+		// Don't do anything if the image already loaded.
+        // https://stackoverflow.com/a/1977898/2640146
+		if (img.complete && img.naturalWidth > 0) return;
+
 		const urlForBlurhash = (() => {
 			const pixels = decode(image.blurhash, 32, 32);
 
@@ -57,6 +61,12 @@
 
 		img.style.backgroundImage = `url("${urlForBlurhash}")`;
 		img.style.backgroundSize = '100% 100%';
+
+        // Remove the background on load to avoid breaking transparent images.
+		img.addEventListener('load', () => {
+			img.style.backgroundImage = 'unset';
+			img.style.backgroundSize = 'unset';
+		});
 	});
 </script>
 

@@ -1,26 +1,20 @@
 <script>
-	import TilePicture from '$lib/layout/TilePicture.svelte';
 	import ButtonTile from '$lib/widgets/ButtonTile.svelte';
+	import GeneratedImage from '$lib/widgets/GeneratedImage.svelte';
 
-	import NinjaLogoWebp712 from './ninja-logo.png?w=712&webp&imagetools';
-	import NinjaLogoWebp356 from './ninja-logo.png?w=356&webp&imagetools';
-	import NinjaLogoWebp175 from './ninja-logo.png?w=175&webp&imagetools';
-	import NinjaLogoJpeg356 from './ninja-logo.png?w=356&jpeg&imagetools';
-	import NinjaLogoJpeg175 from './ninja-logo.png?w=175&jpeg&imagetools';
+	import { NinjaLogo } from '$lib/generated-images';
+	import { gridASizesList } from '$lib/layout/layout';
 </script>
 
 <ButtonTile areaName="ninja" buttonClass="bg-black highlight:bg-dark-blue">
-	<TilePicture
+	<GeneratedImage
 		slot="content"
 		imgClass="fill-contain"
-		alt="Ninja (streamer)"
-		subgrid="A"
-		columns={3}
-		mobileWebp={NinjaLogoWebp356}
-		mobileJpeg={NinjaLogoJpeg356}
-		webpWidthSrcset={`${NinjaLogoWebp712} 712w, ${NinjaLogoWebp356} 356w, ${NinjaLogoWebp175} 175w`}
-		jpegWidthSrcset={`${NinjaLogoJpeg356} 356w, ${NinjaLogoJpeg175} 175w`}
-		jpegSrc={NinjaLogoJpeg175}
+		image={{
+			alt: 'Ninja (streamer)',
+			...NinjaLogo
+		}}
+		sizes={gridASizesList(3)}
 	/>
 
 	<div slot="description">

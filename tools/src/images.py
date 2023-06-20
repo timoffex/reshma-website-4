@@ -39,7 +39,7 @@ class SourceImage:
     def size(self) -> tuple[int, int]:
         """Returns the width and height of this image."""
         [width, height] = subprocess.getoutput(
-            f"identify -ping -format '%w,%h' {self._path}"
+            f"identify -ping -format '%w,%h' {self._path}[0]"
         ).split(",")
         return (int(width), int(height))
 
