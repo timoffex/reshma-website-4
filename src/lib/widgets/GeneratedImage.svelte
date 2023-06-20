@@ -1,5 +1,8 @@
 <!-- @component A picture element that displays an auto-generated image. -->
 <script lang="ts">
+	import { decode } from 'blurhash';
+	import { onMount } from 'svelte';
+
 	export let image: {
 		/** The alt text for the image. */
 		alt: string;
@@ -32,6 +35,29 @@
 			return sources.map((s) => `${s.src} ${s.width}w`).join(',');
 		}
 	};
+
+	let img: HTMLImageElement;
+
+	// On mount (so in JavaScript) render the image's blurhash while it loads.
+	onMount(() => {
+		const urlForBlurhash = (() => {
+			const pixels = decode(image.blurhash, 32, 32);
+
+			const canvas = document.createElement('canvas');
+			canvas.width = 32;
+			canvas.height = 32;
+
+			const ctx = canvas.getContext('2d')!;
+			const imageData = ctx.createImageData(32, 32);
+			imageData.data.set(pixels);
+			ctx.putImageData(imageData, 0, 0);
+
+			return canvas.toDataURL();
+		})();
+
+		img.style.backgroundImage = `url("${urlForBlurhash}")`;
+		img.style.backgroundSize = '100% 100%';
+	});
 </script>
 
 <picture>
@@ -41,5 +67,5 @@
 	{#if image.jpegSources}
 		<source type="image/jpeg" srcset={srcsetFrom(image.jpegSources)} {sizes} />
 	{/if}
-	<img alt={image.alt} src={TRANSPARENT_1x1} class={imgClass} />
+	<img bind:this={img} alt={image.alt} src={TRANSPARENT_1x1} class={imgClass} />
 </picture>
