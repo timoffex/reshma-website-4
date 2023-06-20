@@ -9,5 +9,10 @@ node_modules
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
-
 .firebase/**
+
+# Python virtual environment.
+.venv/**
+
+# Generated image files.
+static/images/**

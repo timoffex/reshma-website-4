@@ -27,5 +27,9 @@ const gridSizesList = (colsInSubgrid: number, cols: number) => {
 };
 
 export const mainContentSizesList = `min(45rem, 100vw - ${mainMaximizedMarginX})`;
+
+/** Returns a sizes string for a tile spanning the given number of grid A columns. */
 export const gridASizesList = (cols: number) => gridSizesList(gridACols, cols);
+
+/** Returns a sizes string for a tile spanning the given number of grid B columns. */
 export const gridBSizesList = (cols: number) => gridSizesList(gridBCols, cols);
