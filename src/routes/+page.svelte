@@ -45,30 +45,32 @@
 		</div>
 		<MusicTile />
 	</div> 
-</div>
 
-<MarqueeText animationSeconds={60}>
-	Universal Music Group &#x2726;
-	YouTube Gaming &#x2726;
-	YouTube Shorts &#x2726;
-	YouTube (#MinecraftMuseum, Pride 2022, 2021 &amp; 2020, Kids &amp; Family) &#x2726;
-	XQ Institute &#x2726;
-	Elizabeth Taylor AIDS Foundation &#x2726;
-	San Jos&eacute; Sharks &#x2726;
-	Third Eye Blind &#x2726;
-	Soundgarden &#x2726;
-	311 &#x2726;
-	Hoobastank &#x2726;
-	The Used &#x2726;
-	Michael Bubl&eacute; &#x2726;
-	WeTransfer &#x2726;
-	Robinhood &#x2726;
-	Ninja &#x2726;
-	Lee Trink (FaZe Clan) &#x2726;
-	Brie Larson &#x2726;
-	Lilly Singh &#x2726;
-	Roblox Splash's Virtual Influencer Kai &#x2726;&nbsp;
-</MarqueeText>
+	<div class="tile clients-list-container">
+		<MarqueeText animationSeconds={60}>
+			Universal Music Group &#x2726;
+			YouTube Gaming &#x2726;
+			YouTube Shorts &#x2726;
+			YouTube (#MinecraftMuseum, Pride 2022, 2021 &amp; 2020, Kids &amp; Family) &#x2726;
+			XQ Institute &#x2726;
+			Elizabeth Taylor AIDS Foundation &#x2726;
+			San Jos&eacute; Sharks &#x2726;
+			Third Eye Blind &#x2726;
+			Soundgarden &#x2726;
+			311 &#x2726;
+			Hoobastank &#x2726;
+			The Used &#x2726;
+			Michael Bubl&eacute; &#x2726;
+			WeTransfer &#x2726;
+			Robinhood &#x2726;
+			Ninja &#x2726;
+			Lee Trink (FaZe Clan) &#x2726;
+			Brie Larson &#x2726;
+			Lilly Singh &#x2726;
+			Roblox Splash's Virtual Influencer Kai &#x2726;&nbsp;
+		</MarqueeText>
+	</div>
+</div>
 
 <div class="main-content">
 	<div id="contact" class="lets-collaborate">
@@ -100,6 +102,10 @@
 <FlyoutScrim />
 
 <style>
+	.clients-list-container {
+		padding: 1rem;
+	}
+
 	.lets-collaborate {
 		margin-top: 2rem;
 		line-height: 0.8;
