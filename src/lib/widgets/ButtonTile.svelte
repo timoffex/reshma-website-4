@@ -2,13 +2,13 @@
 	import DescriptionFlyout from '$lib/flyout/DescriptionFlyout.svelte';
 	import { getFlyout } from '$lib/flyout/flyout';
 
-  /** The name of the grid area where to put the button. */
+	/** The name of the grid area where to put the button. */
 	export let areaName: string;
 
-  /** Additional global styles for the button. */
+	/** Additional global styles for the button. */
 	export let buttonClass: string | undefined = undefined;
 
-  /** If set, this uses additional styling for buttons containing a FlipCard. */
+	/** If set, this uses additional styling for buttons containing a FlipCard. */
 	export let card: boolean = false;
 
 	const currentFlyoutId = getFlyout();
@@ -24,7 +24,7 @@
 <button
 	class="grid-area-{areaName} tile image-button{extraButtonClasses}"
 	class:tile--no-outline={card}
-  class:card-button={card}
+	class:card-button={card}
 	on:click={toggleFlyout}
 	data-focused-card={isShowingFlyout}
 >
@@ -61,9 +61,9 @@
 		}
 	}
 
-  .card-button {
-    perspective: 1000px;
-    background: transparent;
+	.card-button {
+		perspective: 1000px;
+		background: transparent;
 		overflow: visible;
-  }
+	}
 </style>
