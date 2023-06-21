@@ -1,28 +1,20 @@
 <script>
-	import TilePicture from '$lib/layout/TilePicture.svelte';
 	import ButtonTile from '$lib/widgets/ButtonTile.svelte';
+	import GeneratedImage from '$lib/widgets/GeneratedImage.svelte';
 
-	import WattamWebp712 from './wattam.png?webp&w=712&imagetools';
-	import WattamWebp356 from './wattam.png?webp&w=356&imagetools';
-	import WattamWebp175 from './wattam.png?webp&w=175&imagetools';
-
-	import WattamJpeg356 from './wattam.png?jpeg&w=356&imagetools';
-	import WattamJpeg175 from './wattam.png?jpeg&w=175&imagetools';
+	import { Wattam } from '$lib/generated-images';
+	import { gridBSizesList } from '$lib/layout/layout';
 </script>
 
 <ButtonTile areaName="wattam">
-	<TilePicture
+	<GeneratedImage
 		slot="content"
 		imgClass="fill-cover image-color-on-hover"
-		loading="lazy"
-		alt="Wattam"
-		subgrid="B"
-		columns={2}
-		mobileWebp={WattamWebp356}
-		mobileJpeg={WattamJpeg356}
-		webpWidthSrcset={`${WattamWebp712} 712w, ${WattamWebp356} 356w, ${WattamWebp175} 175w`}
-		jpegWidthSrcset={`${WattamJpeg356} 356w, ${WattamJpeg175} 175w`}
-		jpegSrc={WattamJpeg175}
+		image={{
+			alt: 'Wattam',
+			...Wattam
+		}}
+		sizes={gridBSizesList(2)}
 	/>
 
 	<div slot="description">
