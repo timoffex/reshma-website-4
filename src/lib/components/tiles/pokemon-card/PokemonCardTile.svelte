@@ -22,7 +22,7 @@
 	<FlipCard slot="content">
 		<TilePicture
 			slot="front"
-			imgClass="fill rounded-border"
+			imgClass="fill rounded-border image-color-on-hover"
 			alt="Backside of a Pokemon card"
 			subgrid="B"
 			columns={1}
@@ -35,7 +35,7 @@
 
 		<TilePicture
 			slot="back"
-			imgClass="fill rounded-border"
+			imgClass="fill rounded-border image-color-on-hover"
 			alt="Custom Pokemon card for YouTuber GlitchxCity"
 			subgrid="B"
 			columns={1}

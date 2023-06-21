@@ -11,7 +11,7 @@
 	<FlipCard slot="content">
 		<GeneratedImage
 			slot="front"
-			imgClass="fill rounded-border"
+			imgClass="fill rounded-border image-color-on-hover"
 			image={{
 				alt: 'Backside of an Animal Crossing Amiibo card',
 				...AmiiboBack
@@ -21,7 +21,7 @@
 
 		<GeneratedImage
 			slot="back"
-			imgClass="fill rounded-border"
+			imgClass="fill rounded-border image-color-on-hover"
 			image={{
 				alt: 'Backside of an Animal Crossing Amiibo card',
 				...AmiiboFront
