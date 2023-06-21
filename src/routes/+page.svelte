@@ -47,7 +47,7 @@
 		<MusicTile />
 	</div> 
 
-	<div class="tile clients-list-container">
+	<div class="tile clients-list-container" use:fadeInOut>
 		<MarqueeText animationSeconds={60}>
 			Universal Music Group &#x2726;
 			YouTube Gaming &#x2726;
