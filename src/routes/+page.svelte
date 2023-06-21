@@ -1,5 +1,6 @@
 <script>
 	import { setupFlyoutContext } from '$lib/flyout/flyout';
+	import { fadeInOut } from '$lib/fade-in-out';
 
 	import Navbar from '$lib/components/navigation/Navbar.svelte';
 	import AnimatedTigerTile from '$lib/components/tiles/aapi-heritage/AnimatedTigerTile.svelte';
@@ -38,7 +39,7 @@
 		<AmiiboCardTile />
 		<PlayMagazineTile />
 		<WattamTile />
-		<div class="tile grid-area-music-blank bg-black color-white" style="position: relative;">
+		<div class="tile grid-area-music-blank bg-black color-white" style="position: relative;" use:fadeInOut>
 			<span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
 				(future project)
 			</span>

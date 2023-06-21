@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { fadeInOut } from '$lib/fade-in-out';
 	import DescriptionFlyout from '$lib/flyout/DescriptionFlyout.svelte';
 	import { getFlyout } from '$lib/flyout/flyout';
 
@@ -27,6 +28,7 @@
 	class:card-button={card}
 	on:click={toggleFlyout}
 	data-focused-card={isShowingFlyout}
+	use:fadeInOut
 >
 	<slot name="content" />
 </button>

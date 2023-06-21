@@ -8,6 +8,7 @@
   overflow: hidden;
 
   box-shadow: 0 0 0 1px black;
+
   &:focus-visible {
     box-shadow: 0 0 0 4px cyan;
   }
@@ -18,6 +19,24 @@
     box-shadow: none;
   }
 }
+
+.animate-fade-in-out {
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+
+  transform: translateY(0);
+  opacity: 1;
+
+  &[data-fade-in-out-state="above"] {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  &[data-fade-in-out-state="below"] {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+}
+
 
 @media (any-hover: hover) {
   .image-color-on-hover-2 {
@@ -36,7 +55,7 @@
     &:hover,
     :focus-visible &,
     &:is([data-focused-card="true"] *) {
-     filter: none;
+      filter: none;
     }
   }
 }
@@ -68,9 +87,16 @@
   -ms-user-select: none;
 }
 
-.bg-black { background-color: black; }
-.color-white { color: white; }
+.bg-black {
+  background-color: black;
+}
+
+.color-white {
+  color: white;
+}
+
 .highlight\:bg-dark-blue {
+
   &:hover,
   &:focus-within,
   &:is([data-focused-card="true"] *) {
@@ -78,4 +104,6 @@
   }
 }
 
-.display-block { display: block; }
+.display-block {
+  display: block;
+}

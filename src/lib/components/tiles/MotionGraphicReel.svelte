@@ -1,4 +1,8 @@
-<div class="grid-area-reel tile">
+<script>
+	import { fadeInOut } from '$lib/fade-in-out';
+</script>
+
+<div class="grid-area-reel tile" use:fadeInOut>
 	<iframe
 		loading="lazy"
 		class="fill-cover"
