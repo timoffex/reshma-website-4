@@ -5,6 +5,7 @@ const gridBCols = 4;
 
 const gridGapLength = `${spacingPx}px`;
 const mainMaximizedMarginX = `${2 * spacingPx}px`;
+const mainMaxWidth = '55rem';
 
 
 const gridColumnWidthCalc = (numCols: number, mainWidthCalc: string) => {
@@ -17,16 +18,16 @@ const gridSizesList = (colsInSubgrid: number, cols: number) => {
   const columnWidthCalc = (mainWidthCalc: string) => gridColumnWidthCalc(colsInSubgrid, mainWidthCalc);
 
   // If width > 45rem+16px, then each column can be expressed in rem units.
-  const colRemsCalculation = `calc(${cols} * (${columnWidthCalc('45rem')}) + ${gridGaps})`;
+  const colRemsCalculation = `calc(${cols} * (${columnWidthCalc(mainMaxWidth)}) + ${gridGaps})`;
 
   // Otherwise, each column can be expressed in vw units. 
   const colVwsCalculation = `calc(${cols} * (${columnWidthCalc(`100vw - ${mainMaximizedMarginX}`)}) + ${gridGaps})`;
 
-  return `(min-width: calc(45rem + 16px)) ${colRemsCalculation},` +
+  return `(min-width: calc(${mainMaxWidth} + 16px)) ${colRemsCalculation},` +
     ` ${colVwsCalculation}`;
 };
 
-export const mainContentSizesList = `min(45rem, 100vw - ${mainMaximizedMarginX})`;
+export const mainContentSizesList = `min(${mainMaxWidth}, 100vw - ${mainMaximizedMarginX})`;
 
 /** Returns a sizes string for a tile spanning the given number of grid A columns. */
 export const gridASizesList = (cols: number) => gridSizesList(gridACols, cols);
