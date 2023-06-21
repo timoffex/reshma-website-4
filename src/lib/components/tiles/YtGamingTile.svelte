@@ -6,7 +6,9 @@
   const LOTTIE_PATH = "yt-gaming-logo.jsonlottie";
 </script>
 
-<link rel="preload" href={LOTTIE_PATH} as="fetch" />
+<svelte:head>
+  <link rel="preload" href={LOTTIE_PATH} as="fetch" />
+</svelte:head>
 
 <ButtonTile
     areaName="yt-gaming"
