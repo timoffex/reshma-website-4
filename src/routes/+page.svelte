@@ -40,7 +40,7 @@
 		<PlayMagazineTile />
 		<WattamTile />
 		<div class="tile grid-area-music-blank bg-black color-white" style="position: relative;" use:fadeInOut>
-			<span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+			<span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
 				(future project)
 			</span>
 		</div>
