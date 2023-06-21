@@ -9,14 +9,14 @@
 	import SjSharksTile from '$lib/components/tiles/sj-sharks/SjSharksTile.svelte';
 	import FlyoutScrim from '$lib/flyout/FlyoutScrim.svelte';
 	import EmailAddress from '$lib/widgets/EmailAddress.svelte';
-	import WattamTile from '$lib/components/tiles/wattam/WattamTile.svelte';
-	import YtGamingTile from '$lib/components/tiles/yt-gaming/YtGamingTile.svelte';
+	import WattamTile from '$lib/components/tiles/WattamTile.svelte';
+	import YtGamingTile from '$lib/components/tiles/YtGamingTile.svelte';
 	import Eyes from '$lib/components/tiles/eyes/Eyes.svelte';
-	import MotionGraphicReel from '$lib/components/tiles/motion-graphic-reel/MotionGraphicReel.svelte';
+	import MotionGraphicReel from '$lib/components/tiles/MotionGraphicReel.svelte';
 	import PokemonCardTile from '$lib/components/tiles/pokemon-card/PokemonCardTile.svelte';
-	import AmiiboCardTile from '$lib/components/tiles/amiibo/AmiiboCardTile.svelte';
+	import AmiiboCardTile from '$lib/components/tiles/AmiiboCardTile.svelte';
 	import SalemVideoTile from '$lib/components/tiles/salem/SalemVideoTile.svelte';
-	import MusicTile from '$lib/components/tiles/music/MusicTile.svelte';
+	import MusicTile from '$lib/components/tiles/MusicTile.svelte';
 	import MarqueeText from '$lib/widgets/MarqueeText.svelte';
 
 	setupFlyoutContext();
