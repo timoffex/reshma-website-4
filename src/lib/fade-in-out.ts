@@ -28,7 +28,6 @@ if (typeof (window) !== 'undefined') {
         },
         {
             // Run callback when target comes in contact with area in viewport.
-            rootMargin: '-100px',
             threshold: 0.0,
         }
     );
