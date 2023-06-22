@@ -1,5 +1,6 @@
 <script>
-	import Navbar from '../navigation/Navbar.svelte';
+	import Navbar from '$lib/components/navigation/Navbar.svelte';
+	import Hand16x9 from '$lib/widgets/Hand16x9.svelte';
 
 	import ThirdEyeBlindWebm from './3EB.webm';
 	import ThirdEyeBlindMp4 from './3EB.mp4';
@@ -8,35 +9,35 @@
 	import ThreeOneOneMp4 from './311.mp4';
 </script>
 
-<div class="main-content extra-padding-bottom">
+<div class="main-content">
 	<Navbar />
-</div>
 
-<!-- svelte-ignore a11y-media-has-caption -->
-<video class="full-bleed-1920" controls preload="metadata" style="aspect-ratio: 1920/1080;">
-	<source src={ThirdEyeBlindWebm} type="video/webm" />
-	<source src={ThirdEyeBlindMp4} type="video/mp4" />
-</video>
+	<Hand16x9>
+		<!-- svelte-ignore a11y-media-has-caption -->
+		<video class="fill" controls preload="metadata" style="aspect-ratio: 1920/1080;">
+			<source src={ThirdEyeBlindWebm} type="video/webm" />
+			<source src={ThirdEyeBlindMp4} type="video/mp4" />
+		</video>
+	</Hand16x9>
 
-<div class="main-content text-align-right">
-	<p>
+	<p class="text-align-right">
 		Client: Third Eye Blind<br />
 		Agency: XX Artists<br />
 		Creative Director: Mackenna Millet<br />
 		Director of Talent: Melissa Mondello<br />
 	</p>
-</div>
 
-<div class="separating-space"></div>
+	<div class="separating-space" />
 
-<!-- svelte-ignore a11y-media-has-caption -->
-<video class="full-bleed-1920" controls preload="metadata" style="aspect-ratio: 1920/1080;">
-	<source src={ThreeOneOneWebm} type="video/webm" />
-	<source src={ThreeOneOneMp4} type="video/mp4" />
-</video>
+	<Hand16x9>
+		<!-- svelte-ignore a11y-media-has-caption -->
+		<video class="fill" controls preload="metadata" style="aspect-ratio: 1920/1080;">
+			<source src={ThreeOneOneWebm} type="video/webm" />
+			<source src={ThreeOneOneMp4} type="video/mp4" />
+		</video>
+	</Hand16x9>
 
-<div class="main-content text-align-right">
-	<p>
+	<p class="text-align-right">
 		Client: 311<br />
 		Agency: XX Artists<br />
 		Creative Director: Mackenna Millet<br />
@@ -45,21 +46,8 @@
 </div>
 
 <style>
-	.extra-padding-bottom {
-		padding-bottom: 24px;
-	}
-
 	.separating-space {
 		height: 100px;
-	}
-
-	.full-bleed-1920 {
-		display: block;
-
-		width: 100%;
-		max-width: 1920px;
-		margin: 0 auto;
-		padding: 0;
 	}
 
 	.text-align-right {
