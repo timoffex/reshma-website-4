@@ -19,6 +19,7 @@
 	import SalemVideoTile from '$lib/components/tiles/salem/SalemVideoTile.svelte';
 	import MusicTile from '$lib/components/tiles/MusicTile.svelte';
 	import MarqueeText from '$lib/widgets/MarqueeText.svelte';
+	import WeTransferTile from '$lib/components/tiles/WeTransferTile.svelte';
 
 	setupFlyoutContext();
 </script>
@@ -39,11 +40,7 @@
 		<AmiiboCardTile />
 		<PlayMagazineTile />
 		<WattamTile />
-		<div class="tile grid-area-music-blank bg-black color-white" style="position: relative;" use:fadeInOut>
-			<span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
-				(future project)
-			</span>
-		</div>
+		<WeTransferTile />
 		<MusicTile />
 	</div> 
 

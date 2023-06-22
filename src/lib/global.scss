@@ -104,6 +104,16 @@
   }
 }
 
+.highlight\:bg-red {
+
+  &:hover,
+  &:focus-within,
+  &:is([data-focused-card="true"] *) {
+    background-color: #FD4344;
+  }
+
+}
+
 .display-block {
   display: block;
 }
