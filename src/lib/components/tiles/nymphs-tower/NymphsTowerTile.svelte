@@ -2,12 +2,12 @@
 	import TilePicture from '$lib/layout/TilePicture.svelte';
 	import ButtonTile from '$lib/widgets/ButtonTile.svelte';
 
-	import NymphsTowerWebp256 from './nymphtower-vertical-256.webp';
-	import NymphsTowerWebp174 from './nymphtower-vertical-174.webp';
-	import NymphsTowerWebp87 from './nymphtower-vertical-87.webp';
+	import NymphsTowerWebp256 from './nymphtower-256.webp';
+	import NymphsTowerWebp174 from './nymphtower-174.webp';
+	import NymphsTowerWebp87 from './nymphtower-87.webp';
 
-	import NymphsTowerJpeg174 from './nymphtower-vertical-174.webp?jpeg&imagetools';
-	import NymphsTowerJpeg87 from './nymphtower-vertical-87.webp?jpeg&imagetools';
+	import NymphsTowerJpeg174 from './nymphtower-174.webp?jpeg&imagetools';
+	import NymphsTowerJpeg87 from './nymphtower-87.webp?jpeg&imagetools';
 </script>
 
 <ButtonTile areaName="nymphs-tower">
