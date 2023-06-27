@@ -3,7 +3,7 @@
 
 	if (typeof window !== 'undefined') import('@lottiefiles/lottie-player');
 
-	const LOTTIE_PATH = 'wetransfer2.jsonlottie';
+	const LOTTIE_PATH = 'wetransfer3.jsonlottie';
 </script>
 
 <ButtonTile areaName="wetransfer" buttonClass="bg-black highlight:bg-red">
