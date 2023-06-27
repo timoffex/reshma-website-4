@@ -92,7 +92,7 @@
 			Custom-developed by Timofey Peshin (<EmailAddress email="timoffex@gmail.com" />)
 		</span>
 		<br />
-		<span> Website mocked in Figma </span>
+		<span> Designed by Reshma Zachariah, mocked in Figma </span>
 		<br />
 		<span> Animated in After Effects and Lottie </span>
 	</div>
