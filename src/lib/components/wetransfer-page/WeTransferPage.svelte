@@ -36,7 +36,7 @@
 		<div class="wetransfer-gallery-grid__text">
 			<p>
 				Suite of assets for social made for Earth Day, or World Environment Day. Client used these
-				on Instagram and Linkedin.<br />
+				on Instagram and Linkedin.<br /><br />
 				AD: Nate Makuch
 			</p>
 		</div>
@@ -55,7 +55,11 @@
 		</div>
 
 		<div class="wetransfer-gallery-grid__text next-to-9x16">
-			<p>text</p>
+			<p>
+				Assets made for WEPRESENT's collaboration with Tillie Walden and girl in red. Used on
+				Instagram and Twitter.<br /><br />
+                AD: Nate Makuch
+			</p>
 		</div>
 	</div>
 </div>
@@ -72,8 +76,8 @@
 	}
 
 	.wetransfer-gallery-grid__1x1 {
-        grid-row: span 1;
-        grid-column: span 1;
+		grid-row: span 1;
+		grid-column: span 1;
 
 		display: block;
 		border: 1px solid black;
@@ -85,7 +89,7 @@
 
 	.wetransfer-gallery-grid__9x16 {
 		grid-row: span 2;
-        grid-column: span 1;
+		grid-column: span 1;
 
 		display: block;
 		border: 1px solid black;
@@ -109,9 +113,9 @@
 		}
 	}
 
-    // An imperfect way to get an item below a 1x1 square and
-    // next to a 9x16 rectangle to take up the remaining space.
-    .next-to-9x16 {
-        aspect-ratio: 9 / 7;
-    }
+	// An imperfect way to get an item below a 1x1 square and
+	// next to a 9x16 rectangle to take up the remaining space.
+	.next-to-9x16 {
+		aspect-ratio: 9 / 7;
+	}
 </style>
