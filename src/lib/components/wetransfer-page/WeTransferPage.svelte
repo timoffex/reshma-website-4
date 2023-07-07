@@ -40,8 +40,7 @@
 				AD: Nate Makuch
 			</p>
 		</div>
-	</div>
-	<div class="wetransfer-gallery-grid">
+
 		<div class="wetransfer-gallery-grid__1x1">
 			<video class="fill-cover" autoplay loop muted>
 				<source src={GirlInRed2} />
