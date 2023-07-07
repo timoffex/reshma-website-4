@@ -16,6 +16,10 @@
         "destination": "/music.html"
       },
       {
+        "source": "wetransfer",
+        "destination": "/wetransfer.html"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }
