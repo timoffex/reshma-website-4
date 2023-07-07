@@ -7,6 +7,8 @@
 
 	import GirlInRed1 from './girl-in-red1.mp4';
 	import GirlInRed2 from './girl-in-red2.mp4';
+
+	import MarinaAbramovicIntro from './marina-abramovic-intro.mp4';
 </script>
 
 <!-- svelte-ignore a11y-media-has-caption -->
@@ -15,6 +17,7 @@
 	<Navbar />
 
 	<div class="wetransfer-gallery-grid">
+		<!-- Earth Day -->
 		<div class="wetransfer-gallery-grid__1x1">
 			<video class="fill-cover" autoplay loop muted>
 				<source src={EarthdaySlide1} />
@@ -41,6 +44,7 @@
 			</p>
 		</div>
 
+		<!-- Girl In Red -->
 		<div class="wetransfer-gallery-grid__1x1">
 			<video class="fill-cover" autoplay loop muted>
 				<source src={GirlInRed2} />
@@ -57,7 +61,29 @@
 			<p>
 				Assets made for WEPRESENT's collaboration with Tillie Walden and girl in red. Used on
 				Instagram and Twitter.<br /><br />
-                AD: Nate Makuch
+				AD: Nate Makuch
+			</p>
+		</div>
+
+		<!-- Marina Abramovic -->
+		<div class="wetransfer-gallery-grid__9x16">
+			<video class="fill-cover" autoplay loop muted>
+				<source src={MarinaAbramovicIntro} />
+			</video>
+		</div>
+
+		<div class="wetransfer-gallery-grid__1x1" />
+
+		<div class="wetransfer-gallery-grid__text next-to-9x16">
+			<p>
+				Suite of assets made for WEPRESENT's guest curator series with Marina Abramović. These
+				assets were used on WEPRESENT's Instagram Story and in Feed. Read more about the 5 artists
+				she selected <a
+					target="_blank"
+					href="https://wepresent.wetransfer.com/series/guest-curator-marina-abramovic">here</a
+				>.
+				<br /><br />
+				AD: Nate Makuch
 			</p>
 		</div>
 	</div>
@@ -108,7 +134,7 @@
 
 		> * {
 			margin: auto;
-			font-size: 6cqw;
+			font-size: 5cqw;
 		}
 	}
 
