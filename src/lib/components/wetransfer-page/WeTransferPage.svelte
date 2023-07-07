@@ -19,19 +19,19 @@
 	<div class="wetransfer-gallery-grid">
 		<!-- Earth Day -->
 		<div class="wetransfer-gallery-grid__1x1">
-			<video class="fill-cover" autoplay loop muted>
+			<video class="fill-cover" autoplay loop muted playsinline tabindex={-1}>
 				<source src={EarthdaySlide1} />
 			</video>
 		</div>
 
 		<div class="wetransfer-gallery-grid__1x1">
-			<video class="fill-cover" autoplay loop muted>
+			<video class="fill-cover" autoplay loop muted playsinline tabindex={-1}>
 				<source src={EarthdaySlide2} />
 			</video>
 		</div>
 
 		<div class="wetransfer-gallery-grid__1x1">
-			<video class="fill-cover" autoplay loop muted>
+			<video class="fill-cover" autoplay loop muted playsinline tabindex={-1}>
 				<source src={EarthdaySlide3} />
 			</video>
 		</div>
@@ -46,13 +46,13 @@
 
 		<!-- Girl In Red -->
 		<div class="wetransfer-gallery-grid__1x1">
-			<video class="fill-cover" autoplay loop muted>
+			<video class="fill-cover" autoplay loop muted playsinline tabindex={-1}>
 				<source src={GirlInRed2} />
 			</video>
 		</div>
 
 		<div class="wetransfer-gallery-grid__9x16">
-			<video class="fill-cover" autoplay loop muted>
+			<video class="fill-cover" autoplay loop muted playsinline tabindex={-1}>
 				<source src={GirlInRed1} />
 			</video>
 		</div>
@@ -67,7 +67,7 @@
 
 		<!-- Marina Abramovic -->
 		<div class="wetransfer-gallery-grid__9x16">
-			<video class="fill-cover" autoplay loop muted>
+			<video class="fill-cover" autoplay loop muted playsinline tabindex={-1}>
 				<source src={MarinaAbramovicIntro} />
 			</video>
 		</div>
