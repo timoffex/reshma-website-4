@@ -11,6 +11,6 @@
 
 	<p slot="description">
 		I created motion graphics for WeTransfer, Collect, and WEPRESENT's Twitter, Instagram and
-		LinkedIn.
+		LinkedIn. See <a href="/wetransfer">here</a>.
 	</p>
 </ButtonTile>
