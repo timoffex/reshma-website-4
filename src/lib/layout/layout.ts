@@ -1,4 +1,4 @@
-const spacingPx = 8;
+export const spacingPx = 8;
 
 const gridACols = 6;
 const gridBCols = 4;
@@ -27,7 +27,8 @@ const gridSizesList = (colsInSubgrid: number, cols: number) => {
     ` ${colVwsCalculation}`;
 };
 
-export const mainContentSizesList = `min(${mainMaxWidth}, 100vw - ${mainMaximizedMarginX})`;
+/** Returns a CSS expression for the width of main-content. */
+export const mainContentSizeExpr = `min(${mainMaxWidth}, 100vw - ${mainMaximizedMarginX})`;
 
 /** Returns a sizes string for a tile spanning the given number of grid A columns. */
 export const gridASizesList = (cols: number) => gridSizesList(gridACols, cols);

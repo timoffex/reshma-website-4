@@ -1,5 +1,8 @@
-<script>
+<script lang="ts">
 	import Navbar from '$lib/components/navigation/Navbar.svelte';
+	import { MarinaAbramovic } from '$lib/generated-images';
+	import { mainContentSizeExpr, spacingPx } from '$lib/layout/layout';
+	import GeneratedImage from '$lib/widgets/GeneratedImage.svelte';
 
 	import EarthdaySlide1 from './earthday-slide1.mp4';
 	import EarthdaySlide2 from './earthday-slide2.mp4';
@@ -9,6 +12,8 @@
 	import GirlInRed2 from './girl-in-red2.mp4';
 
 	import MarinaAbramovicIntro from './marina-abramovic-intro.mp4';
+
+	const gridColSizesList = `calc((${mainContentSizeExpr} - ${spacingPx}px) / 2)`;
 </script>
 
 <!-- svelte-ignore a11y-media-has-caption -->
@@ -72,7 +77,16 @@
 			</video>
 		</div>
 
-		<div class="wetransfer-gallery-grid__1x1" />
+		<div class="wetransfer-gallery-grid__1x1">
+			<GeneratedImage
+				image={{
+					alt: 'Marina Abramovic quote',
+					...MarinaAbramovic
+				}}
+				sizes={gridColSizesList}
+				imgClass="fill-cover"
+			/>
+		</div>
 
 		<div class="wetransfer-gallery-grid__text next-to-9x16">
 			<p>
