@@ -25,14 +25,6 @@
 
 	<div slot="description">
 		<p>Motion Graphic Design and Illustration for AAPI heritage month.</p>
-		<p>
-			Agency: XX Artists{' '}
-			<a
-				href="https://www.thedrum.com/news/2022/07/01/mediamonks-merges-with-la-talent-agency-xx-artists"
-				target="_blank"
-			>
-				(merged with Media.Monks in 2022)
-			</a>
-		</p>
+		<p>Agency: <a target="_blank" href="https://www.instagram.com/p/CeCSTQABzkw/">XX Artists</a></p>
 	</div>
 </ButtonTile>
