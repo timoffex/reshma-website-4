@@ -13,6 +13,9 @@
 
 	import MarinaAbramovicIntro from './marina-abramovic-intro.mp4';
 
+	import HumblebragIntro from './humblebrag-intro.mp4';
+	import Humblebrag2 from './humblebrag-2.mp4';
+
 	const gridColSizesList = `calc((${mainContentSizeExpr} - ${spacingPx}px) / 2)`;
 </script>
 
@@ -100,6 +103,19 @@
 				AD: Nate Makuch
 			</p>
 		</div>
+
+		<!-- Humblebrag -->
+		<div class="wetransfer-gallery-grid__1x1--9x16">
+			<video class="fill-cover" autoplay loop muted playsinline tabindex={-1}>
+				<source src={HumblebragIntro} />
+			</video>
+		</div>
+
+		<div class="wetransfer-gallery-grid__1x1--9x16">
+			<video class="fill-cover" autoplay loop muted playsinline tabindex={-1}>
+				<source src={Humblebrag2} />
+			</video>
+		</div>
 	</div>
 </div>
 
@@ -114,7 +130,8 @@
 		grid-gap: layout.$spacing;
 	}
 
-	.wetransfer-gallery-grid__1x1 {
+	.wetransfer-gallery-grid__1x1,
+	.wetransfer-gallery-grid__1x1--9x16 {
 		grid-row: span 1;
 		grid-column: span 1;
 
@@ -124,6 +141,10 @@
 		aspect-ratio: 1;
 		min-height: 0;
 		overflow: hidden;
+	}
+
+	.wetransfer-gallery-grid__1x1--9x16 {
+		aspect-ratio: 9 / 16;
 	}
 
 	.wetransfer-gallery-grid__9x16 {
