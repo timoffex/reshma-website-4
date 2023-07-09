@@ -16,6 +16,8 @@
 	import HumblebragIntro from './humblebrag-intro.mp4';
 	import Humblebrag2 from './humblebrag-2.mp4';
 
+	import CollectBoards from './collect-boards.mp4';
+
 	const gridColSizesList = `calc((${mainContentSizeExpr} - ${spacingPx}px) / 2)`;
 </script>
 
@@ -116,6 +118,13 @@
 				<source src={Humblebrag2} />
 			</video>
 		</div>
+
+		<!-- Collect Boards -->
+		<div class="wetransfer-gallery-grid__2x2">
+			<video class="fill-cover" autoplay loop muted playsinline tabindex={-1}>
+				<source src={CollectBoards} />
+			</video>
+		</div>
 	</div>
 </div>
 
@@ -131,32 +140,38 @@
 	}
 
 	.wetransfer-gallery-grid__1x1,
-	.wetransfer-gallery-grid__1x1--9x16 {
-		grid-row: span 1;
-		grid-column: span 1;
-
+	.wetransfer-gallery-grid__1x1--9x16,
+	.wetransfer-gallery-grid__9x16,
+	.wetransfer-gallery-grid__2x2 {
 		display: block;
 		border: 1px solid black;
 		border-radius: layout.$spacing;
-		aspect-ratio: 1;
 		min-height: 0;
 		overflow: hidden;
 	}
 
+	.wetransfer-gallery-grid__1x1 {
+		grid-row: span 1;
+		grid-column: span 1;
+		aspect-ratio: 1;
+	}
+
 	.wetransfer-gallery-grid__1x1--9x16 {
+		grid-row: span 1;
+		grid-column: span 1;
 		aspect-ratio: 9 / 16;
 	}
 
 	.wetransfer-gallery-grid__9x16 {
 		grid-row: span 2;
 		grid-column: span 1;
-
-		display: block;
-		border: 1px solid black;
-		border-radius: layout.$spacing;
 		aspect-ratio: 9 / 16;
-		min-height: 0;
-		overflow: hidden;
+	}
+
+	.wetransfer-gallery-grid__2x2 {
+		grid-row: span 1;
+		grid-column: span 2;
+		aspect-ratio: 1;
 	}
 
 	.wetransfer-gallery-grid__text {
