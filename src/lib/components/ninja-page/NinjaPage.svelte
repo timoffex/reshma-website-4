@@ -1,6 +1,6 @@
 <script>
 	import Navbar from '$lib/components/navigation/Navbar.svelte';
-	import { mainContentSizesList } from '$lib/layout/layout';
+	import { mainContentSizeExpr } from '$lib/layout/layout';
 	import Slideshow from '$lib/widgets/Slideshow.svelte';
 
 	import NinjaThumbnailsWebpSrcset from './ninja-yt-thumbnails-1033.png?w=1033;800;600&webp&srcset&imagetools';
@@ -8,39 +8,39 @@
 
 	import MinecraftWebpSrcset from './slides/minecraft.png?w=1000;800;600&webp&srcset&imagetools';
 	import MinecraftJpegSrcset from './slides/minecraft.png?w=1000;800;600&jpeg&srcset&imagetools';
-	import MinecraftJpeg from './slides/minecraft.png?w=600&jpeg&imagetools'
+	import MinecraftJpeg from './slides/minecraft.png?w=600&jpeg&imagetools';
 
 	import VictoryRoyaleWebpSrcset from './slides/victory-royale.png?w=1000;800;600&webp&srcset&imagetools';
 	import VictoryRoyaleJpegSrcset from './slides/victory-royale.png?w=1000;800;600&jpeg&srcset&imagetools';
-	import VictoryRoyaleJpeg from './slides/victory-royale.png?w=600&jpeg&imagetools'
+	import VictoryRoyaleJpeg from './slides/victory-royale.png?w=600&jpeg&imagetools';
 
 	import LotsOfDamageWebpSrcset from './slides/lots-of-damage.png?w=1000;800;600&webp&srcset&imagetools';
 	import LotsOfDamageJpegSrcset from './slides/lots-of-damage.png?w=1000;800;600&jpeg&srcset&imagetools';
-	import LotsOfDamageJpeg from './slides/lots-of-damage.png?w=600&jpeg&imagetools'
+	import LotsOfDamageJpeg from './slides/lots-of-damage.png?w=600&jpeg&imagetools';
 
 	import FirstTimePlayingWebpSrcset from './slides/first-time.png?w=1000;800;600&webp&srcset&imagetools';
 	import FirstTimePlayingJpegSrcset from './slides/first-time.png?w=1000;800;600&jpeg&srcset&imagetools';
-	import FirstTimePlayingJpeg from './slides/first-time.png?w=600&jpeg&imagetools'
+	import FirstTimePlayingJpeg from './slides/first-time.png?w=600&jpeg&imagetools';
 
 	import UnstoppableWebpSrcset from './slides/unstoppable.png?w=1000;800;600&webp&srcset&imagetools';
 	import UnstoppableJpegSrcset from './slides/unstoppable.png?w=1000;800;600&jpeg&srcset&imagetools';
-	import UnstoppableJpeg from './slides/unstoppable.png?w=600&jpeg&imagetools'
+	import UnstoppableJpeg from './slides/unstoppable.png?w=600&jpeg&imagetools';
 
 	import TiktokStreamerWebpSrcset from './slides/tiktok-streamer.png?w=1000;800;600&webp&srcset&imagetools';
 	import TiktokStreamerJpegSrcset from './slides/tiktok-streamer.png?w=1000;800;600&jpeg&srcset&imagetools';
-	import TiktokStreamerJpeg from './slides/tiktok-streamer.png?w=600&jpeg&imagetools'
+	import TiktokStreamerJpeg from './slides/tiktok-streamer.png?w=600&jpeg&imagetools';
 
 	import RickAndMortyWebpSrcset from './slides/rick-and-morty.png?w=1000;800;600&webp&srcset&imagetools';
 	import RickAndMortyJpegSrcset from './slides/rick-and-morty.png?w=1000;800;600&jpeg&srcset&imagetools';
-	import RickAndMortyJpeg from './slides/rick-and-morty.png?w=600&jpeg&imagetools'
+	import RickAndMortyJpeg from './slides/rick-and-morty.png?w=600&jpeg&imagetools';
 
 	import CallOfDutyWebpSrcset from './slides/warzone.png?w=1000;800;600&webp&srcset&imagetools';
 	import CallOfDutyJpegSrcset from './slides/warzone.png?w=1000;800;600&jpeg&srcset&imagetools';
-	import CallOfDutyJpeg from './slides/warzone.png?w=600&jpeg&imagetools'
+	import CallOfDutyJpeg from './slides/warzone.png?w=600&jpeg&imagetools';
 
 	import EpicWeaponWebpSrcset from './slides/epic-weapon.png?w=1000;800;600&webp&srcset&imagetools';
 	import EpicWeaponJpegSrcset from './slides/epic-weapon.png?w=1000;800;600&jpeg&srcset&imagetools';
-	import EpicWeaponJpeg from './slides/epic-weapon.png?w=600&jpeg&imagetools'
+	import EpicWeaponJpeg from './slides/epic-weapon.png?w=600&jpeg&imagetools';
 </script>
 
 <div class="main-content">
@@ -49,7 +49,7 @@
 	<div class="slideshow">
 		<Slideshow
 			delayMs={5000}
-			sizes={mainContentSizesList}
+			sizes={mainContentSizeExpr}
 			images={[
 				{
 					alt: '"Minecraft" thumbnail',
@@ -124,8 +124,8 @@
 	</div>
 
 	<picture>
-		<source type="image/webp" srcset={NinjaThumbnailsWebpSrcset} sizes={mainContentSizesList} />
-		<source type="image/jpeg" srcset={NinjaThumbnailsJpegSrcset} sizes={mainContentSizesList} />
+		<source type="image/webp" srcset={NinjaThumbnailsWebpSrcset} sizes={mainContentSizeExpr} />
+		<source type="image/jpeg" srcset={NinjaThumbnailsJpegSrcset} sizes={mainContentSizeExpr} />
 		<img src="" alt="Ninja's YouTube thumbnails" class="thumbnails" />
 	</picture>
 </div>
