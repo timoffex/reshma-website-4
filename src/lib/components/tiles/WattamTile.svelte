@@ -21,7 +21,7 @@
 		<p>
 			I performed technical assurance and build reliability tasks as a QA intern for PlayStation 4
 			game,{' '}
-			<a target="_blank" href="https://www.funomena.com/wattamgame"> Wattam</a>.
+			<a target="_blank" href="https://store.steampowered.com/app/702680/Wattam/"> Wattam</a>.
 		</p>
 		<p>Studio: Funomena</p>
 		<p>Publisher: Annapurna Interactive</p>

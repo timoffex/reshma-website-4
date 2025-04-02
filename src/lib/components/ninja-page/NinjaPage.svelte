@@ -109,19 +109,17 @@
 		/>
 	</div>
 
-	<div class="description-text">
-		<div class="client-description">
-			Client: Ninja<br />
-			Agency: XX Artists<br />
-			Creative Director: Nate Makuch<br />
-		</div>
-		<div class="work-description">
-			Designed numerous thumbnails for esports talent, Ninja.<br />
-			Videos have over 100K views each.<br />
-			<br />
-			2021
-		</div>
-	</div>
+	<p class="text-align-right text-smaller">
+		Client: Ninja<br />
+		Agency: XX Artists<br />
+		Creative Director: Nate Makuch<br />
+	</p>
+	<p class="text-align-right">
+		Designed numerous thumbnails for esports talent, Ninja.<br />
+		Videos have over 100K views each.<br />
+		<br />
+		2021
+	</p>
 
 	<picture>
 		<source type="image/webp" srcset={NinjaThumbnailsWebpSrcset} sizes={mainContentSizeExpr} />
@@ -135,18 +133,12 @@
 		display: block;
 	}
 
-	.description-text {
+	.text-align-right {
 		text-align: right;
 	}
 
-	.client-description {
-		margin-top: 3rem;
+	.text-smaller {
 		font-size: 0.8rem;
-	}
-
-	.work-description {
-		margin-top: 3rem;
-		margin-bottom: 3rem;
 	}
 
 	.slideshow {

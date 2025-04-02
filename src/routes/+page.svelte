@@ -58,11 +58,13 @@
 			311 &#x2726;
 			Hoobastank &#x2726;
 			The Used &#x2726;
+			Sum 41 &#x2726;
+			Goo Goo Dolls &#x2726;
 			Michael Bubl&eacute; &#x2726;
 			WeTransfer &#x2726;
 			Robinhood &#x2726;
 			Ninja &#x2726;
-			Lee Trink (FaZe Clan) &#x2726;
+			FaZe Clan &#x2726;
 			Brie Larson &#x2726;
 			Lilly Singh &#x2726;
 			Roblox Splash's Virtual Influencer Kai &#x2726;&nbsp;

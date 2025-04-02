@@ -20,11 +20,17 @@
 		</video>
 	</Hand16x9>
 
-	<p class="text-align-right">
+	<p class="text-align-right text-smaller">
 		Client: Third Eye Blind<br />
 		Agency: XX Artists<br />
 		Creative Director: Mackenna Millet<br />
 		Director of Talent: Melissa Mondello<br />
+	</p>
+
+	<p class="text-align-right">
+		I created a suite of assets for Third Eye Blind's album anniversaries
+		as well as a custom AR Filter (using SparkAR) for the band that their
+		frontman, guitarist and vocalist, Stephan&nbsp;Jenkins used.
 	</p>
 
 	<div class="separating-space" />
@@ -37,7 +43,7 @@
 		</video>
 	</Hand16x9>
 
-	<p class="text-align-right">
+	<p class="text-align-right text-smaller">
 		Client: 311<br />
 		Agency: XX Artists<br />
 		Creative Director: Mackenna Millet<br />
@@ -52,5 +58,9 @@
 
 	.text-align-right {
 		text-align: right;
+	}
+
+	.text-smaller {
+		font-size: 0.8rem;
 	}
 </style>
