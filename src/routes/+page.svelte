@@ -121,12 +121,10 @@
 	}
 
 	.lets-collaborate__2 {
-		font-family: 'Roboto Mono';
 		font-size: 2rem;
 	}
 
 	.reshma-email {
-		font-family: 'Roboto Mono';
 		text-align: right;
 		margin-top: 1rem;
 	}

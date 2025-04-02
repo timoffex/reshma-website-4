@@ -109,7 +109,7 @@
 		/>
 	</div>
 
-	<p class="text-align-right text-smaller">
+	<p class="text-align-right text-small">
 		Client: Ninja<br />
 		Agency: XX Artists<br />
 		Creative Director: Nate Makuch<br />
@@ -135,10 +135,6 @@
 
 	.text-align-right {
 		text-align: right;
-	}
-
-	.text-smaller {
-		font-size: 0.8rem;
 	}
 
 	.slideshow {

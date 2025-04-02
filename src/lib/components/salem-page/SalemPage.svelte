@@ -86,10 +86,6 @@
     margin: 0 auto;
   }
 
-  .text-small {
-    font-size: 0.8rem;
-  }
-
 	.full-width-pixel-image {
     display: block;
     width: 100%;
