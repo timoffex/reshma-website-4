@@ -1,40 +1,41 @@
 <script lang="ts">
-	import Navbar from '../navigation/Navbar.svelte';
+  import Navbar from '../navigation/Navbar.svelte';
 
-	import SalemAnimated320 from './salem-animated-320.gif';
-	import SalemSpritesheet322 from './salem-spritesheet-322.png';
+  import SalemAnimated320 from './salem-animated-320.gif';
+  import SalemSpritesheet322 from './salem-spritesheet-322.png';
 </script>
 
 <div class="main-content">
-	<Navbar />
+  <Navbar />
 
-	<iframe
-		class="salem-ps5-youtube-embed"
-		src="https://www.youtube.com/embed/WRVonH0TTS8?si=KaPMz0EYsGnKOK9Z"
-		title="YouTube video player"
-		frameborder="0"
-		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-		referrerpolicy="strict-origin-when-cross-origin"
-		allowfullscreen
-	/>
+  <iframe
+    class="salem-ps5-youtube-embed"
+    src="https://www.youtube.com/embed/WRVonH0TTS8?si=KaPMz0EYsGnKOK9Z"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+  ></iframe>
 
-	<p class="text-align-center">
-		I created the fun and cute pixel art graphic effects for salem ilese's music video, PS5, in
-		2022. This was a super fun project and I had a lot of creative freedom to illustrate the bright,
-		retro and playful MapleStory inspired GFX in this video. The assets are optimized for the
-		potential to create a 2D platformer game in the future.
-	</p>
-	<p class="text-align-center">
-		I worked with director Christina Xing and producer Laura Burhenn to create every instance of 2D
-		animation in the final music video, with the approval of salem and the record label, Universal
-		Music Group.
-	</p>
+  <p class="text-align-center">
+    I created the fun and cute pixel art graphic effects for salem ilese's music
+    video, PS5, in 2022. This was a super fun project and I had a lot of
+    creative freedom to illustrate the bright, retro and playful MapleStory
+    inspired GFX in this video. The assets are optimized for the potential to
+    create a 2D platformer game in the future.
+  </p>
+  <p class="text-align-center">
+    I worked with director Christina Xing and producer Laura Burhenn to create
+    every instance of 2D animation in the final music video, with the approval
+    of salem and the record label, Universal Music Group.
+  </p>
 
-	<img
-		alt="spritesheet of an animation of salem ilese"
-		src={SalemSpritesheet322}
-		class="full-width-pixel-image"
-	/>
+  <img
+    alt="spritesheet of an animation of salem ilese"
+    src={SalemSpritesheet322}
+    class="full-width-pixel-image"
+  />
 
   <p class="margin-auto text-small">
     Production Company: Our Secret Handshake<br />
@@ -73,22 +74,22 @@
 </div>
 
 <style lang="scss">
-	.salem-ps5-youtube-embed {
-		width: 100%;
-		aspect-ratio: 560 / 315;
-	}
+  .salem-ps5-youtube-embed {
+    width: 100%;
+    aspect-ratio: 560 / 315;
+  }
 
-	.text-align-center {
-		text-align: center;
-	}
+  .text-align-center {
+    text-align: center;
+  }
 
   .margin-auto {
     margin: 0 auto;
   }
 
-	.full-width-pixel-image {
+  .full-width-pixel-image {
     display: block;
     width: 100%;
-		image-rendering: pixelated;
-	}
+    image-rendering: pixelated;
+  }
 </style>

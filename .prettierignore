@@ -7,7 +7,10 @@ node_modules
 .env.*
 !.env.example
 
-# Ignore files for PNPM, NPM and YARN
+# Ignore files for PNPM, NPM and YARN.
 pnpm-lock.yaml
 package-lock.json
 yarn.lock
+
+# Manually formatted files.
+layout-styles.scss

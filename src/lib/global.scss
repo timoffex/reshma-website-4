@@ -2,7 +2,6 @@
 
 @use 'layout/layout';
 
-
 .tile {
   border-radius: layout.$spacing;
   overflow: hidden;
@@ -21,22 +20,23 @@
 }
 
 .animate-fade-in-out {
-  transition: transform 0.5s, opacity 0.5s;
+  transition:
+    transform 0.5s,
+    opacity 0.5s;
 
   transform: translateY(0);
   opacity: 1;
 
-  &[data-fade-in-out-state="above"] {
+  &[data-fade-in-out-state='above'] {
     transform: translateY(-100px);
     opacity: 0;
   }
 
-  &[data-fade-in-out-state="below"] {
+  &[data-fade-in-out-state='below'] {
     transform: translateY(100px);
     opacity: 0;
   }
 }
-
 
 @media (any-hover: hover) {
   .image-color-on-hover-2 {
@@ -44,7 +44,7 @@
 
     &:hover,
     :focus-visible &,
-    &:is([data-focused-card="true"] *) {
+    &:is([data-focused-card='true'] *) {
       filter: none;
     }
   }
@@ -54,7 +54,7 @@
 
     &:hover,
     :focus-visible &,
-    &:is([data-focused-card="true"] *) {
+    &:is([data-focused-card='true'] *) {
       filter: none;
     }
   }
@@ -96,22 +96,19 @@
 }
 
 .highlight\:bg-dark-blue {
-
   &:hover,
   &:focus-within,
-  &:is([data-focused-card="true"] *) {
+  &:is([data-focused-card='true'] *) {
     background-color: #101835;
   }
 }
 
 .highlight\:bg-red {
-
   &:hover,
   &:focus-within,
-  &:is([data-focused-card="true"] *) {
-    background-color: #FD4344;
+  &:is([data-focused-card='true'] *) {
+    background-color: #fd4344;
   }
-
 }
 
 .display-block {

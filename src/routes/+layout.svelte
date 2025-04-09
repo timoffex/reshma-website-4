@@ -1,24 +1,31 @@
 <script lang="ts">
-	import '$lib/global.scss';
-	import '$lib/layout/layout-styles.scss';
+  import '$lib/global.scss';
+  import '$lib/layout/layout-styles.scss';
 
-	import { afterNavigate, beforeNavigate } from '$app/navigation';
-	import { onMount } from 'svelte';
+  import type { Snippet } from 'svelte';
+  import { afterNavigate, beforeNavigate } from '$app/navigation';
+  import { onMount } from 'svelte';
 
-	/* Use smooth-scroll except when navigating between pages. */
+  interface Props {
+    children?: Snippet;
+  }
 
-	let root: HTMLElement;
-	onMount(() => {
-		root = document.getElementsByTagName('html')[0];
-	});
+  let { children }: Props = $props();
 
-	beforeNavigate(() => {
-		root.style.scrollBehavior = 'auto';
-	});
+  /* Use smooth-scroll except when navigating between pages. */
 
-	afterNavigate(() => {
-		root.style.scrollBehavior = 'smooth';
-	});
+  let root: HTMLElement;
+  onMount(() => {
+    root = document.getElementsByTagName('html')[0];
+  });
+
+  beforeNavigate(() => {
+    root.style.scrollBehavior = 'auto';
+  });
+
+  afterNavigate(() => {
+    root.style.scrollBehavior = 'smooth';
+  });
 </script>
 
-<slot />
+{@render children?.()}

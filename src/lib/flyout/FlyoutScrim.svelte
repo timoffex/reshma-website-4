@@ -1,21 +1,17 @@
 <script lang="ts">
-	import { getFlyout } from "./flyout";
+  import { getFlyout } from './flyout';
 
   const currentFlyoutId = getFlyout();
 
-  $: isFlyoutOpen = $currentFlyoutId !== undefined;
-  $: visibility = isFlyoutOpen ? 'visible' : 'hidden';
+  let isFlyoutOpen = $derived($currentFlyoutId !== undefined);
+  let visibility = $derived(isFlyoutOpen ? 'visible' : 'hidden');
 
   const hideFlyout = () => {
     currentFlyoutId.set(undefined);
   };
 </script>
 
-<div
-    on:click={hideFlyout}
-    on:keyup={hideFlyout}
-    class={visibility}>
-</div>
+<div onclick={hideFlyout} onkeyup={hideFlyout} class={visibility}></div>
 
 <style lang="scss">
   @use '$lib/layout/layout';
@@ -40,7 +36,11 @@
   }
 
   @keyframes appear {
-    0% { opacity: 0; }
-    100% { opacity: 0.8; }
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.8;
+    }
   }
 </style>

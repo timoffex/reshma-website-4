@@ -3,9 +3,7 @@
     <a href="/">01 Home</a>
     <a href="/#contact">02 Contact</a>
   </div>
-  <div class="name">
-    Reshma
-  </div>
+  <div class="name">Reshma</div>
 </div>
 
 <style lang="scss">

@@ -1,5 +1,5 @@
-import { getContext, setContext } from "svelte";
-import { writable, type Writable } from "svelte/store";
+import { getContext, setContext } from 'svelte';
+import { writable, type Writable } from 'svelte/store';
 
 const currentFlyoutIdSymbol = Symbol();
 

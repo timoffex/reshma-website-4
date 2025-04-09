@@ -1,30 +1,34 @@
 <script lang="ts">
   import EyeballImage from './eyeball.png';
 
-	import { onMount } from "svelte";
-  import { spring } from "svelte/motion";
+  import { onMount } from 'svelte';
+  import { Spring } from 'svelte/motion';
 
-  export let lookAt: {x: number, y: number}|undefined;
+  interface Props {
+    lookAt: { x: number; y: number } | undefined;
+  }
 
-  let eyeballContainer: HTMLElement;
+  let { lookAt }: Props = $props();
 
-  const offset = spring({ x: 0, y: 0 });
+  let eyeballContainer: HTMLElement | undefined = $state();
+
+  const offset = new Spring({ x: 0, y: 0 });
 
   onMount(() => {
     let interval = setInterval(() => {
       if (!lookAt) return;
 
-      const rect = eyeballContainer.getBoundingClientRect();
+      const rect = eyeballContainer!.getBoundingClientRect();
       const centerX = rect.x + rect.width / 2;
       const centerY = rect.y + rect.height / 2;
 
       let diffX = lookAt.x - centerX;
       let diffY = lookAt.y - centerY;
-      
-      const m2 = diffX*diffX + diffY*diffY;
+
+      const m2 = diffX * diffX + diffY * diffY;
 
       const maxOffset = rect.height * 0.19;
-      if (m2 > maxOffset*maxOffset) {
+      if (m2 > maxOffset * maxOffset) {
         const m = Math.sqrt(m2);
         diffX *= maxOffset / m;
         diffY *= maxOffset / m;
@@ -32,25 +36,22 @@
 
       offset.set({
         x: diffX,
-        y: diffY,
+        y: diffY
       });
     }, 50);
 
     return () => clearInterval(interval);
   });
-
 </script>
 
-<div class="container"
-    bind:this={eyeballContainer} >
-  <img
-      src={EyeballImage}
-      alt=""
-      class="eyeball" />
+<div class="container" bind:this={eyeballContainer}>
+  <img src={EyeballImage} alt="" class="eyeball" />
   <svg
-      viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
-      class="iris"
-      style="transform: translate({$offset.x}px, {$offset.y}px)">
+    viewBox="0 0 100 100"
+    xmlns="http://www.w3.org/2000/svg"
+    class="iris"
+    style="transform: translate({offset.current.x}px, {offset.current.y}px)"
+  >
     <circle cx="50" cy="50" r="50" fill="black" />
   </svg>
 </div>

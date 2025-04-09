@@ -1,51 +1,52 @@
 <script>
-	import { setupFlyoutContext } from '$lib/flyout/flyout';
-	import { fadeInOut } from '$lib/fade-in-out';
+  import { setupFlyoutContext } from '$lib/flyout/flyout';
+  import { fadeInOut } from '$lib/fade-in-out';
 
-	import Navbar from '$lib/components/navigation/Navbar.svelte';
-	import AnimatedTigerTile from '$lib/components/tiles/aapi-heritage/AnimatedTigerTile.svelte';
-	import NinjaTile from '$lib/components/tiles/ninja/NinjaTile.svelte';
-	import NymphsTowerTile from '$lib/components/tiles/nymphs-tower/NymphsTowerTile.svelte';
-	import PlayMagazineTile from '$lib/components/tiles/play-magazine/PlayMagazineTile.svelte';
-	import SjSharksTile from '$lib/components/tiles/sj-sharks/SjSharksTile.svelte';
-	import FlyoutScrim from '$lib/flyout/FlyoutScrim.svelte';
-	import EmailAddress from '$lib/widgets/EmailAddress.svelte';
-	import WattamTile from '$lib/components/tiles/WattamTile.svelte';
-	import YtGamingTile from '$lib/components/tiles/YtGamingTile.svelte';
-	import Eyes from '$lib/components/tiles/eyes/Eyes.svelte';
-	import MotionGraphicReel from '$lib/components/tiles/MotionGraphicReel.svelte';
-	import PokemonCardTile from '$lib/components/tiles/pokemon-card/PokemonCardTile.svelte';
-	import AmiiboCardTile from '$lib/components/tiles/AmiiboCardTile.svelte';
-	import SalemVideoTile from '$lib/components/tiles/salem/SalemVideoTile.svelte';
-	import MusicTile from '$lib/components/tiles/MusicTile.svelte';
-	import MarqueeText from '$lib/widgets/MarqueeText.svelte';
-	import WeTransferTile from '$lib/components/tiles/WeTransferTile.svelte';
+  import Navbar from '$lib/components/navigation/Navbar.svelte';
+  import AnimatedTigerTile from '$lib/components/tiles/aapi-heritage/AnimatedTigerTile.svelte';
+  import NinjaTile from '$lib/components/tiles/ninja/NinjaTile.svelte';
+  import NymphsTowerTile from '$lib/components/tiles/nymphs-tower/NymphsTowerTile.svelte';
+  import PlayMagazineTile from '$lib/components/tiles/play-magazine/PlayMagazineTile.svelte';
+  import SjSharksTile from '$lib/components/tiles/sj-sharks/SjSharksTile.svelte';
+  import FlyoutScrim from '$lib/flyout/FlyoutScrim.svelte';
+  import EmailAddress from '$lib/widgets/EmailAddress.svelte';
+  import WattamTile from '$lib/components/tiles/WattamTile.svelte';
+  import YtGamingTile from '$lib/components/tiles/YtGamingTile.svelte';
+  import Eyes from '$lib/components/tiles/eyes/Eyes.svelte';
+  import MotionGraphicReel from '$lib/components/tiles/MotionGraphicReel.svelte';
+  import PokemonCardTile from '$lib/components/tiles/pokemon-card/PokemonCardTile.svelte';
+  import AmiiboCardTile from '$lib/components/tiles/AmiiboCardTile.svelte';
+  import SalemVideoTile from '$lib/components/tiles/salem/SalemVideoTile.svelte';
+  import MusicTile from '$lib/components/tiles/MusicTile.svelte';
+  import MarqueeText from '$lib/widgets/MarqueeText.svelte';
+  import WeTransferTile from '$lib/components/tiles/WeTransferTile.svelte';
 
-	setupFlyoutContext();
+  setupFlyoutContext();
 </script>
 
 <div class="main-content">
-	<Navbar />
+  <Navbar />
 
-	<div class="grid-container">
-		<YtGamingTile />
-		<SalemVideoTile />
-		<SjSharksTile />
-		<NinjaTile />
-		<AnimatedTigerTile />
-		<NymphsTowerTile />
-		<Eyes />
-		<MotionGraphicReel />
-		<PokemonCardTile />
-		<AmiiboCardTile />
-		<PlayMagazineTile />
-		<WattamTile />
-		<WeTransferTile />
-		<MusicTile />
-	</div> 
+  <div class="grid-container">
+    <YtGamingTile />
+    <SalemVideoTile />
+    <SjSharksTile />
+    <NinjaTile />
+    <AnimatedTigerTile />
+    <NymphsTowerTile />
+    <Eyes />
+    <MotionGraphicReel />
+    <PokemonCardTile />
+    <AmiiboCardTile />
+    <PlayMagazineTile />
+    <WattamTile />
+    <WeTransferTile />
+    <MusicTile />
+  </div>
 
-	<div class="tile clients-list-container" use:fadeInOut>
-		<MarqueeText animationSeconds={60}>
+  <div class="tile clients-list-container" use:fadeInOut>
+    <!-- prettier-ignore -->
+    <MarqueeText animationSeconds={60}>
 			Universal Music Group &#x2726;
 			YouTube Gaming &#x2726;
 			YouTube Shorts &#x2726;
@@ -68,71 +69,73 @@
 			Brie Larson &#x2726;
 			Lilly Singh &#x2726;
 			Roblox Splash's Virtual Influencer Kai &#x2726;&nbsp;
-		</MarqueeText>
-	</div>
+    </MarqueeText>
+  </div>
 </div>
 
 <div class="main-content">
-	<div id="contact" class="lets-collaborate">
-		<span class="lets-collaborate__1">let's</span>
-		<br />
-		<span class="lets-collaborate__2">collaborate</span>
-	</div>
-	<div class="reshma-email">
-		<a
-			target="_blank"
-			href="https://www.canva.com/design/DAFdB-ifsjA/vdLPP5e-seBxAO-OUWKYgA/view?utm_content=DAFdB-ifsjA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-		>
-			Resum&eacute;</a
-		><br />
-		Email me to see my client work
-		<br />
-		<EmailAddress email="reshmasz.art@gmail.com" />
-	</div>
-	<div class="developer-credits">
-		<span>
-			Custom-developed by Timofey Peshin (<EmailAddress email="timoffex@gmail.com" />)
-		</span>
-		<br />
-		<span> Designed by Reshma Zachariah, mocked in Figma </span>
-		<br />
-		<span> Animated in After Effects and Lottie </span>
-	</div>
+  <div id="contact" class="lets-collaborate">
+    <span class="lets-collaborate__1">let's</span>
+    <br />
+    <span class="lets-collaborate__2">collaborate</span>
+  </div>
+  <div class="reshma-email">
+    <a
+      target="_blank"
+      href="https://www.canva.com/design/DAFdB-ifsjA/vdLPP5e-seBxAO-OUWKYgA/view?utm_content=DAFdB-ifsjA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+    >
+      Resum&eacute;</a
+    ><br />
+    Email me to see my client work
+    <br />
+    <EmailAddress email="reshmasz.art@gmail.com" />
+  </div>
+  <div class="developer-credits">
+    <span>
+      Custom-developed by Timofey Peshin (<EmailAddress
+        email="timoffex@gmail.com"
+      />)
+    </span>
+    <br />
+    <span> Designed by Reshma Zachariah, mocked in Figma </span>
+    <br />
+    <span> Animated in After Effects and Lottie </span>
+  </div>
 </div>
 <FlyoutScrim />
 
 <style>
-	.clients-list-container {
-		padding: 1rem;
-	}
+  .clients-list-container {
+    padding: 1rem;
+  }
 
-	.lets-collaborate {
-		margin-top: 2rem;
-		line-height: 0.8;
-	}
+  .lets-collaborate {
+    margin-top: 2rem;
+    line-height: 0.8;
+  }
 
-	.lets-collaborate__1 {
-		font-family: 'adobe-caslon-pro', serif;
-		font-weight: 600;
-		font-style: italic;
-		letter-spacing: -0.2rem;
+  .lets-collaborate__1 {
+    font-family: 'adobe-caslon-pro', serif;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: -0.2rem;
 
-		font-size: 3rem;
-	}
+    font-size: 3rem;
+  }
 
-	.lets-collaborate__2 {
-		font-size: 2rem;
-	}
+  .lets-collaborate__2 {
+    font-size: 2rem;
+  }
 
-	.reshma-email {
-		text-align: right;
-		margin-top: 1rem;
-	}
+  .reshma-email {
+    text-align: right;
+    margin-top: 1rem;
+  }
 
-	.developer-credits {
-		text-align: right;
-		margin-top: 1rem;
-		font-size: 0.5rem;
-		color: #1e1e1e;
-	}
+  .developer-credits {
+    text-align: right;
+    margin-top: 1rem;
+    font-size: 0.5rem;
+    color: #1e1e1e;
+  }
 </style>
