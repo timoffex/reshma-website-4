@@ -8,6 +8,7 @@
 
 <a
   href="/wetransfer"
+  aria-label="WeTransfer"
   class="display-block tile grid-area-wetransfer bg-black highlight:bg-red"
   use:fadeInOut
 >

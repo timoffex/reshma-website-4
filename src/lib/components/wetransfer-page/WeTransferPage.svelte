@@ -178,14 +178,12 @@
   .wetransfer-gallery-grid__text {
     display: flex;
     flex-direction: column;
-
-    overflow: auto;
+    justify-content: center;
 
     container-type: inline-size;
 
     > * {
-      margin: auto;
-      font-size: 5cqw;
+      font-size: min(1em, 5cqw);
     }
   }
 
