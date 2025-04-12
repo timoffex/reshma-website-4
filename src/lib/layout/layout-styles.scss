@@ -16,30 +16,17 @@ $_total-cols: 12;
 // Gap between grid cells in all grids.
 $_grid-gap: layout.$spacing;
 
-// Maximum width for the main content area.
-// Keep in sync with layout.ts
-$_main-max-width: 55rem;
-
-// Minimum total horizontal margin for the main content area.
-$_main-maximized-margin-x: 2 * layout.$spacing;
-
-
-$main-content-width:
-  min(
-    $_main-max-width,
-    100vw - $_main-maximized-margin-x
-  );
 
 $_gridA-col-width: 
     calc(
-      ($main-content-width - $_grid-gap * ($_gridA-cols - 1))
+      (layout.$main-content-width - $_grid-gap * ($_gridA-cols - 1))
       / $_gridA-cols
     );
 
 
 .main-content {
   padding: 0;
-  width: $main-content-width;
+  width: layout.$main-content-width;
   margin: layout.$spacing auto;
 
   display: flex;

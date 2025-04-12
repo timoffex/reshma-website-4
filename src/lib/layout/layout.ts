@@ -29,7 +29,7 @@ const gridSizesList = (colsInSubgrid: number, cols: number) => {
   );
 };
 
-/** Returns a CSS expression for the width of main-content. */
+/** A CSS expression for the width of main-content. */
 export const mainContentSizeExpr = `min(${mainMaxWidth}, 100vw - ${mainMaximizedMarginX})`;
 
 /** Returns a sizes string for a tile spanning the given number of grid A columns. */

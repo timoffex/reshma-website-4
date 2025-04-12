@@ -1,9 +1,24 @@
 <script lang="ts">
-  import Navbar from '../navigation/Navbar.svelte';
+  import Navbar from '$lib/components/navigation/Navbar.svelte';
+  import { mainContentSizeExpr } from '$lib/layout/layout';
+  import MinimumMarginImageSource from '$lib/widgets/MinimumMarginImageSource.svelte';
 
   import SalemAnimated320 from './salem-animated-320.gif';
   import SalemSpritesheet322 from './salem-spritesheet-322.png';
+  import DdrArrowSalem from './ddr-arrow-salem.gif';
 </script>
+
+<picture>
+  <!-- Require at least 200px on each side of the main content. -->
+  <MinimumMarginImageSource doubleMinimumMarginExpr="400px" />
+  <img
+    src={DdrArrowSalem}
+    alt=""
+    class="decorative-arrow"
+    width="120"
+    height="116"
+  />
+</picture>
 
 <div class="main-content">
   <Navbar />
@@ -74,6 +89,28 @@
 </div>
 
 <style lang="scss">
+  @use '$lib/layout/layout';
+
+  .decorative-arrow {
+    position: fixed;
+    left: calc((100vw - layout.$main-content-width) / 2 - 140px);
+
+    animation:
+      6s linear 0s infinite decorative-arrow-falling,
+      1s steps(5) 0s infinite alternate decorative-arrow-shaking;
+
+    image-rendering: pixelated;
+  }
+
+  @keyframes decorative-arrow-falling {
+    from {
+      top: -116px;
+    }
+    to {
+      top: 100%;
+    }
+  }
+
   .salem-ps5-youtube-embed {
     width: 100%;
     aspect-ratio: 560 / 315;

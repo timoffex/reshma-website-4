@@ -4,3 +4,16 @@ $spacing: 8px;
 $z-index-focus-backdrop: 8;
 $z-index-description-flyout: 9;
 $z-index-focused-card: 10;
+
+// Maximum width for the main content area.
+// Keep in sync with layout.ts
+$_main-max-width: 55rem;
+
+// Minimum total horizontal margin for the main content area.
+$_main-maximized-margin-x: 2 * $spacing;
+
+$main-content-width:
+  min(
+    $_main-max-width,
+    100vw - $_main-maximized-margin-x
+  );
