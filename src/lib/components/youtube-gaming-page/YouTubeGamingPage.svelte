@@ -25,8 +25,8 @@
         Designer. I was key to the YouTube Gaming social team because of my
         previous work in the Gaming industry, and familiarity with social first
         Gaming content. During my time on the team, @YouTubeGaming saw steady
-        growth on Twitter, growing from 1.5 million followers to over 2.3 million
-        in the span of three years.
+        growth on Twitter, growing from 1.5 million followers to over 2.3
+        million in the span of three years.
       </p>
     </div>
 
@@ -70,12 +70,12 @@
     flex-direction: column;
     justify-content: center;
 
-    text-wrap: balance;
     text-align: center;
 
     container-type: inline-size;
 
     > * {
+      padding: 0 15%;
       font-size: min(1em, 5cqw);
     }
   }
