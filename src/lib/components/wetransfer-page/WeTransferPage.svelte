@@ -180,6 +180,9 @@
     flex-direction: column;
     justify-content: center;
 
+    text-wrap: balance;
+    text-align: center;
+
     container-type: inline-size;
 
     > * {
