@@ -37,7 +37,7 @@
 
       {#snippet back()}
         <TilePicture
-          imgClass="fill rounded-border image-color-on-hover"
+          imgClass="fill rounded-border"
           alt="Custom Pokemon card for YouTuber GlitchxCity"
           subgrid="B"
           columns={1}

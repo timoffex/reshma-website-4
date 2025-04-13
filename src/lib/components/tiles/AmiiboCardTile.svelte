@@ -23,7 +23,7 @@
 
       {#snippet back()}
         <GeneratedImage
-          imgClass="fill rounded-border image-color-on-hover"
+          imgClass="fill rounded-border"
           image={{
             alt: 'Backside of an Animal Crossing Amiibo card',
             ...AmiiboFront
