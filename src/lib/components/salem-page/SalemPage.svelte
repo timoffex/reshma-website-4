@@ -1,11 +1,13 @@
 <script lang="ts">
   import Navbar from '$lib/components/navigation/Navbar.svelte';
-  import { mainContentSizeExpr } from '$lib/layout/layout';
   import MinimumMarginImageSource from '$lib/widgets/MinimumMarginImageSource.svelte';
+  import GeneratedImage from '$lib/widgets/GeneratedImage.svelte';
+  import { SalemLogos } from '$lib/generated-images';
 
   import SalemAnimated320 from './salem-animated-320.gif';
   import SalemSpritesheet322 from './salem-spritesheet-322.png';
   import DdrArrowSalem from './ddr-arrow-salem.gif';
+  import { halfMainContentSizesList } from '$lib/layout/layout';
 </script>
 
 <picture>
@@ -21,7 +23,18 @@
 </picture>
 
 <div class="main-content">
-  <Navbar />
+  <Navbar>
+    {#snippet logo()}
+      <GeneratedImage
+        image={{
+          alt: '',
+          ...SalemLogos
+        }}
+        imgClass="fill-contain-left"
+        sizes={halfMainContentSizesList}
+      />
+    {/snippet}
+  </Navbar>
 
   <iframe
     class="salem-ps5-youtube-embed"

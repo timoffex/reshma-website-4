@@ -6,7 +6,8 @@
      * An optional logo to display inside the header.
      *
      * It will be put in a div with a completely determined size
-     * and overflow set to hidden.
+     * and overflow set to hidden. The size will be at most half
+     * the main content width.
      */
     logo?: Snippet;
   }

@@ -37,3 +37,6 @@ export const gridASizesList = (cols: number) => gridSizesList(gridACols, cols);
 
 /** Returns a sizes string for a tile spanning the given number of grid B columns. */
 export const gridBSizesList = (cols: number) => gridSizesList(gridBCols, cols);
+
+/** A sizes string for something spanning half the width of main-content. */
+export const halfMainContentSizesList = gridBSizesList(2);
