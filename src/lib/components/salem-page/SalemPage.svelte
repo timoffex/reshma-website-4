@@ -4,6 +4,10 @@
   import GeneratedImage from '$lib/widgets/GeneratedImage.svelte';
   import { SalemLogos } from '$lib/generated-images';
 
+  // https://github.com/vitejs/vite/issues/14686
+  // Importing the image in CSS directly does not invoke vite-imagetools.
+  import Cloud9Slice from './cloud-9-slice.png';
+
   import SalemAnimated320 from './salem-animated-320.gif';
   import SalemSpritesheet322 from './salem-spritesheet-322.png';
   import DdrArrowSalem from './ddr-arrow-salem.gif';
@@ -65,7 +69,10 @@
     class="full-width-pixel-image"
   />
 
-  <p class="margin-auto text-small">
+  <p
+    class="margin-auto text-small indent-hanging cloud-9"
+    style="--cloud-9-url: url('{Cloud9Slice}')"
+  >
     Production Company: Our Secret Handshake<br />
     Director: Christina Xing<br />
     Producer: Laura Burhenn<br />
@@ -122,6 +129,17 @@
     to {
       top: 100%;
     }
+  }
+
+  .cloud-9 {
+    border-image: var(--cloud-9-url) fill 100 / 600px repeat;
+    padding: 80px;
+    image-rendering: pixelated;
+  }
+
+  // For readability on mobile when lines wrap around.
+  .indent-hanging {
+    text-indent: 3em hanging each-line;
   }
 
   .salem-ps5-youtube-embed {
