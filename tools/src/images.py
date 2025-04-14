@@ -82,12 +82,12 @@ class SourceImage:
         args = ["convert"]
         if scale < 1:
             args.extend(["-resize", f"{scale:.0%}%"])
-        args.append(self._path)
+        args.append(str(self._path))
 
         self._image_name._create_generated_file(
             width,
             ext,
-            lambda output_path: subprocess.call(args + [output_path]),
+            lambda output_path: subprocess.check_call(args + [output_path]),
         )
 
         return True
@@ -157,29 +157,29 @@ class ImageName:
         return f"Image({repr(self._name)})"
 
     @property
-    def path(self) -> pathlib.Path:
-        return self._path
-
-    @property
     def camel_case(self) -> str:
         return self._camel_case
 
     @property
     def source(self) -> Optional[SourceImage]:
-        """Returns the path to the source file for this image, if the file exists."""
-
+        """The path to the source file for this image, if the file exists."""
         for file in _SOURCE_DIR.glob(f"{self._name}.*"):
             if re.fullmatch(_SOURCE_END_PATTERN, file.suffix):
                 return SourceImage(self, file)
 
+        return None
+
     @functools.cached_property
     def generated_images(self) -> list[GeneratedImage]:
-        """Returns the generated files for this image."""
+        """The generated files for this image."""
 
         if not _OUTPUT_DIR.exists():
             return []
 
         regexp = re.compile(f"{self._name}{_OUTPUT_END_PATTERN}")
+
+        source = self.source
+        source_path = source.path if source else None
 
         files = []
         for file in _OUTPUT_DIR.iterdir():
@@ -187,7 +187,7 @@ class ImageName:
                 files.append(
                     GeneratedImage(
                         self,
-                        source=self.source.path,
+                        source=source_path,
                         path=file,
                         width=int(match.group(1)),
                         ext=match.group(2),
@@ -200,6 +200,8 @@ class ImageName:
         for generated_image in self.generated_images:
             if generated_image.width == width and generated_image.extension == ext:
                 return generated_image.is_up_to_date()
+        
+        return False
 
     def _create_generated_file(
         self,
