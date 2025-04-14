@@ -138,6 +138,8 @@
   }
 
   // For readability on mobile when lines wrap around.
+  //
+  // NOTE: Works in Firefox and Safari but not Chrome.
   .indent-hanging {
     text-indent: 3em hanging each-line;
   }
