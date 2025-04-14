@@ -1,6 +1,8 @@
 <script>
   import Navbar from '../navigation/Navbar.svelte';
 
+  import YtgLogo from './ytg-logo.svg';
+
   import YtgBento1Mp4 from './ytg-bento-1.mp4';
   import YtgBento1Webm from './ytg-bento-1.webm';
   import YtgBento2Mp4 from './ytg-bento-2.mp4';
@@ -10,7 +12,11 @@
 </script>
 
 <div class="main-content">
-  <Navbar />
+  <Navbar>
+    {#snippet logo()}
+      <img src={YtgLogo} alt="" class="fill-contain-left" />
+    {/snippet}
+  </Navbar>
 
   <div class="yt-gaming-grid">
     <div class="yt-gaming-grid__1x1">
@@ -62,8 +68,7 @@
     <p class="text-align-center">
       <a
         href="https://www.figma.com/proto/IswuUG18DXTh663103z0oo/Reshma-Zachariah's-work-for-YouTube-Gaming?node-id=1-3&p=f&t=O19d8BdL2pUzvDD7-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
-        class="bottom-tile__link"
-        >See More on Figma.</a
+        class="bottom-tile__link">See More on Figma.</a
       >
     </p>
     <p class="text-align-right text-small">
