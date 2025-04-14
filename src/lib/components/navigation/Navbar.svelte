@@ -51,7 +51,7 @@
 
   .logo {
     width: calc(layout.$main-content-width / 2);
-    height: 1lh;
+    height: 1em;
     overflow: hidden;
   }
 
