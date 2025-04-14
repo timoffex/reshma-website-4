@@ -4,6 +4,8 @@
   import { mainContentSizeExpr, spacingPx } from '$lib/layout/layout';
   import GeneratedImage from '$lib/widgets/GeneratedImage.svelte';
 
+  import WeTransferLogo from './wetransfer-logo.svg';
+
   import EarthdaySlide1 from './earthday-slide1.mp4';
   import EarthdaySlide2 from './earthday-slide2.mp4';
   import EarthdaySlide3 from './earthday-slide3.mp4';
@@ -24,7 +26,11 @@
 <!-- svelte-ignore a11y_media_has_caption -->
 
 <div class="main-content">
-  <Navbar />
+  <Navbar>
+    {#snippet logo()}
+      <img src={WeTransferLogo} alt="" class="fill-contain-left" />
+    {/snippet}
+  </Navbar>
 
   <div class="wetransfer-gallery-grid">
     <!-- Earth Day -->
