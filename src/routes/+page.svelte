@@ -21,6 +21,7 @@
   import MarqueeText from '$lib/widgets/MarqueeText.svelte';
   import WeTransferTile from '$lib/components/tiles/WeTransferTile.svelte';
   import MetaTile from '$lib/components/tiles/MetaTile.svelte';
+  import EtafTile from '$lib/components/tiles/EtafTile.svelte';
 
   setupFlyoutContext();
 </script>
@@ -50,7 +51,7 @@
     <WattamTile />
 
     <NinjaTile />
-    <!-- <div class="tile grid-area-etaylor">Elizabeth Taylor AIDS Foundation</div> -->
+    <EtafTile />
 
     <MusicTile />
   </div>
