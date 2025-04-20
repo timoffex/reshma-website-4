@@ -149,10 +149,6 @@
     aspect-ratio: 560 / 315;
   }
 
-  .text-align-center {
-    text-align: center;
-  }
-
   .margin-auto {
     margin: 0 auto;
   }

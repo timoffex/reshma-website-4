@@ -117,14 +117,6 @@
     aspect-ratio: 16 / 9;
   }
 
-  .text-align-center {
-    text-align: center;
-  }
-
-  .text-align-right {
-    text-align: right;
-  }
-
   .bottom-tile {
     padding: 0 7%;
 
