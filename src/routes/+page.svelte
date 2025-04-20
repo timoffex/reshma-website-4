@@ -4,7 +4,7 @@
 
   import Navbar from '$lib/components/navigation/Navbar.svelte';
   import AnimatedTigerTile from '$lib/components/tiles/aapi-heritage/AnimatedTigerTile.svelte';
-  import NinjaTile from '$lib/components/tiles/ninja/NinjaTile.svelte';
+  import NinjaTile from '$lib/components/tiles/NinjaTile.svelte';
   import NymphsTowerTile from '$lib/components/tiles/nymphs-tower/NymphsTowerTile.svelte';
   import PlayMagazineTile from '$lib/components/tiles/play-magazine/PlayMagazineTile.svelte';
   import SjSharksTile from '$lib/components/tiles/sj-sharks/SjSharksTile.svelte';
@@ -17,9 +17,10 @@
   import PokemonCardTile from '$lib/components/tiles/pokemon-card/PokemonCardTile.svelte';
   import AmiiboCardTile from '$lib/components/tiles/AmiiboCardTile.svelte';
   import SalemVideoTile from '$lib/components/tiles/salem/SalemVideoTile.svelte';
-  import MusicTile from '$lib/components/tiles/MusicTile.svelte';
+  import MusicTile from '$lib/components/tiles/music/MusicTile.svelte';
   import MarqueeText from '$lib/widgets/MarqueeText.svelte';
   import WeTransferTile from '$lib/components/tiles/WeTransferTile.svelte';
+  import MetaTile from '$lib/components/tiles/MetaTile.svelte';
 
   setupFlyoutContext();
 </script>
@@ -30,17 +31,27 @@
   <div class="grid-container">
     <YtGamingTile />
     <SalemVideoTile />
+
     <SjSharksTile />
-    <NinjaTile />
+    <WeTransferTile />
+
+    <MetaTile />
     <AnimatedTigerTile />
+
     <NymphsTowerTile />
     <Eyes />
+    <!-- <div class="tile grid-area-youtube">YouTube</div> -->
+
     <MotionGraphicReel />
     <PokemonCardTile />
+
     <AmiiboCardTile />
     <PlayMagazineTile />
     <WattamTile />
-    <WeTransferTile />
+
+    <NinjaTile />
+    <!-- <div class="tile grid-area-etaylor">Elizabeth Taylor AIDS Foundation</div> -->
+
     <MusicTile />
   </div>
 
