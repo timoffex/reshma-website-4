@@ -50,5 +50,84 @@
         Blueprint
       </li>
     </ul>
+
+    <p class="text-align-right text-small">
+      Client: Meta Blueprint<br />
+      Agency: IntraEdge<br />
+      Art Director: Josh Koll<br />
+    </p>
+  </div>
+
+  <div class="videos">
+    <iframe
+      class="video-rounded-border"
+      width="420"
+      height="746"
+      src="https://www.youtube.com/embed/XN7TSbna3UU"
+      title="Getting Started with Reels Ads 1"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <iframe
+      class="video-rounded-border"
+      width="420"
+      height="746"
+      src="https://www.youtube.com/embed/QSduabwjF0c"
+      title="How to Create Reels Ads 2"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <iframe
+      class="video-rounded-border"
+      width="420"
+      height="746"
+      src="https://www.youtube.com/embed/7vvIyt2opao"
+      title="How To Improve Your Ads on Facebook and IG Reels 3"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <iframe
+      width="420"
+      height="746"
+      src="https://www.youtube.com/embed/71vOfNC7rAM"
+      title="Using Different Types of Reels 4"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <iframe
+      width="420"
+      height="746"
+      src="https://www.youtube.com/embed/2kqld3QaMr8"
+      title="How to structure reels ads 5"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
   </div>
 </div>
+
+<style lang="scss">
+  @use '$lib/layout/layout';
+
+  .videos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: layout.$spacing;
+  }
+
+  .video-rounded-border {
+    border: 1px solid black;
+    border-radius: layout.$spacing;
+  }
+</style>
