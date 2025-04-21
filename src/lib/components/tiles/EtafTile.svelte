@@ -7,7 +7,7 @@
 
 <a
   href="/etaf"
-  class="display-block tile grid-area-etaf bg-black highlight:etaf-purple"
+  class="display-block tile grid-area-etaf bg-black highlight:etaf-purple padding-2"
   use:fadeInOut
 >
   <GeneratedImage
@@ -21,6 +21,8 @@
 </a>
 
 <style lang="scss">
+  @use '$lib/layout/layout';
+
   @media (any-hover: hover) {
     .highlight\:etaf-purple {
       &:hover,
@@ -28,5 +30,9 @@
         background: #6720a5;
       }
     }
+  }
+
+  .padding-2 {
+    padding: 2 * layout.$spacing;
   }
 </style>
