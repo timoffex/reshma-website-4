@@ -25,7 +25,7 @@
         <source src={YtgBento1Mp4} type="video/mp4" />
       </video>
     </div>
-    <div class="yt-gaming-grid__1x1 yt-gaming-grid__text">
+    <div class="yt-gaming-grid__1x1 yt-gaming-grid__text ytg-gradient-1">
       <p>
         In 2020, I was brought on board XX Artists' Design team as a Motion
         Designer for my experience in the gaming industry.
@@ -44,7 +44,7 @@
       </video>
     </div>
 
-    <div class="yt-gaming-grid__1x1 yt-gaming-grid__text">
+    <div class="yt-gaming-grid__1x1 yt-gaming-grid__text ytg-gradient-2">
       <p>
         As part of YouTube Gaming's Always On social team, I created crisp
         motion graphics, fun GIFs and illustrations for numerous campaigns
@@ -97,6 +97,8 @@
 
     container-type: inline-size;
 
+    border-radius: layout.$spacing;
+
     > * {
       padding: 0 15%;
       font-size: min(1em, 5cqw);
@@ -130,5 +132,21 @@
 
   .bottom-tile__link:visited {
     color: magenta;
+  }
+
+  .ytg-gradient-1 {
+    color: white;
+    background: radial-gradient(
+      circle,
+      rgba(222, 108, 224, 1) 0%,
+      rgba(116, 163, 237, 1) 100%
+    );
+  }
+  .ytg-gradient-2 {
+    background: radial-gradient(
+      circle,
+      rgba(227, 227, 227, 1) 0%,
+      rgba(148, 187, 233, 1) 100%
+    );
   }
 </style>
