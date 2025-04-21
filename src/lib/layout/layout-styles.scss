@@ -82,6 +82,7 @@ $_gridA-col-width:
 .grid-desc-nymphs-tower  { position: absolute; grid-row: 10; }
 .grid-area-eyes          { grid-area: _gridB-area(7, 2, 1, 1); }
 .grid-area-youtube       { grid-area: _gridB-area(7, 3, 1, 2); }
+.grid-desc-youtube       { position: absolute; grid-row: 8; }
 
 .grid-area-reel          { grid-area: _gridB-area(8, 2, 2, 2); }
 .grid-area-pokemon       { grid-area: _gridB-area(8, 4, 2, 1); }

@@ -22,6 +22,7 @@
   import WeTransferTile from '$lib/components/tiles/WeTransferTile.svelte';
   import MetaTile from '$lib/components/tiles/MetaTile.svelte';
   import EtafTile from '$lib/components/tiles/EtafTile.svelte';
+  import YouTubeTile from '$lib/components/tiles/youtube/YouTubeTile.svelte';
 
   setupFlyoutContext();
 </script>
@@ -41,7 +42,7 @@
 
     <NymphsTowerTile />
     <Eyes />
-    <!-- <div class="tile grid-area-youtube">YouTube</div> -->
+    <YouTubeTile />
 
     <MotionGraphicReel />
     <PokemonCardTile />
