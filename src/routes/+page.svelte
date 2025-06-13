@@ -49,10 +49,10 @@
 
     <AmiiboCardTile />
     <PlayMagazineTile />
-    <WattamTile />
+    <EtafTile />
 
     <NinjaTile />
-    <EtafTile />
+    <WattamTile />
 
     <MusicTile />
   </div>
