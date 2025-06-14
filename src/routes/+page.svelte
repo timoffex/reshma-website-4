@@ -63,7 +63,7 @@
 			Universal Music Group &#x2726;
 			YouTube Gaming &#x2726;
 			YouTube Shorts &#x2726;
-			YouTube (#MinecraftMuseum, Pride 2022, 2021 &amp; 2020, Kids &amp; Family) &#x2726;
+			YouTube (#MinecraftMuseum, YouTube Music, YouTube Creators, Pride 2022, 2021 &amp; 2020, Kids &amp; Family) &#x2726;
 			XQ Institute &#x2726;
 			Elizabeth Taylor AIDS Foundation &#x2726;
 			San Jos&eacute; Sharks &#x2726;
