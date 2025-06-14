@@ -194,13 +194,15 @@ class ImageName:
                     )
                 )
 
+        files.sort(key=lambda generated_image: generated_image.path)
+
         return files
 
     def _is_generated_file_up_to_date(self, width: int, ext: str) -> bool:
         for generated_image in self.generated_images:
             if generated_image.width == width and generated_image.extension == ext:
                 return generated_image.is_up_to_date()
-        
+
         return False
 
     def _create_generated_file(
@@ -238,4 +240,4 @@ def find_all_images() -> list[ImageName]:
             if match := output_re.fullmatch(file.name):
                 image_names.add(match.group(1))
 
-    return [ImageName(name) for name in image_names]
+    return [ImageName(name) for name in sorted(image_names)]
