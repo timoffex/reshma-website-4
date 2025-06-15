@@ -26,7 +26,7 @@
         color: white;
         background: radial-gradient(
           circle,
-          rgba(255 103 0) 100%
+          rgba(0 92 255) 100%
         );
       }
     }
