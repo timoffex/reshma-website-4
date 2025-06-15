@@ -1,23 +1,39 @@
 {
   "hosting": {
     "public": "build",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
-        "source": "ninja",
-        "destination": "/ninja.html"
+        "source": "etaf",
+        "destination": "/etaf.html"
+      },
+      {
+        "source": "meta",
+        "destination": "/meta.html"
       },
       {
         "source": "music",
         "destination": "/music.html"
       },
       {
+        "source": "ninja",
+        "destination": "/ninja.html"
+      },
+      {
+        "source": "salem",
+        "destination": "/salem.html"
+      },
+      {
         "source": "wetransfer",
         "destination": "/wetransfer.html"
+      },
+      {
+        "source": "youtube",
+        "destination": "/youtube.html"
+      },
+      {
+        "source": "youtube-gaming",
+        "destination": "/youtube-gaming.html"
       },
       {
         "source": "**",
