@@ -4,14 +4,18 @@ import fire
 from rich.console import Console
 from rich.markup import escape
 import subprocess
-from ntpath import extsep
 
 
 console = Console(stderr=True)
 
 
 def lint_mp4(*files: str, fix: bool = False) -> None:
-    """Detect if given MP4 files do not start with a moov atom."""
+    """Detect if given MP4 files do not start with a moov atom.
+
+    The 'moov' atom contains metadata that's necessary to start playing
+    the video. Some programs put this at the end, causing browsers to have
+    to load the entire file before they can play it.
+    """
     for file in files:
         _lint_mp4(pathlib.Path(file), fix=fix)
 
