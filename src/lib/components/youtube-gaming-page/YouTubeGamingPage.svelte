@@ -7,7 +7,7 @@
   import YtgBento1Webm from './ytg-bento-1.webm';
   import YtgBento2Mp4 from './ytg-bento-2.mp4';
   import YtgBento2Webm from './ytg-bento-2.webm';
-  import YtgBento3Mp4 from './ytg-bento-3.mp4';
+  import YtgBento3Mp4 from './ytg-bento-3-faststart.mp4';
   import YtgBento3Webm from './ytg-bento-3.webm';
 </script>
 
