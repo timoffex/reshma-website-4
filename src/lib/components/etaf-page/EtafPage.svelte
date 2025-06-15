@@ -4,7 +4,7 @@
   import { gridASizesList, halfMainContentSizesList } from '$lib/layout/layout';
   import GeneratedImage from '$lib/widgets/GeneratedImage.svelte';
 
-  import SunnyHostin from './Brand_ETAF_SunnyHostin IAS Spotlight_RZ_16702.mp4';
+  import SunnyHostin from './Brand_ETAF_SunnyHostin IAS Spotlight_RZ_16702_Silent_Trimmed.mp4';
   import ByTheNumbers1 from './ETAF_By The Numbers_1_RZ.mp4';
   import ByTheNumbers2 from './ETAF_By The Numbers_2_RZ.mp4';
   import LendAHand3 from './ETAF_LendAHand_3_IG_RZ_v3.mp4';
