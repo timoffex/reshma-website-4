@@ -10,7 +10,6 @@
   import ICYMISticker from './Sticker_ICYMI.webm';
   import CreatorMilestone from './YT_CreatorMilestone_IG_RZ.mp4';
   import YTGPride from './YTG_Pride_CommCard_Jaiden Animations_4x5_db_np_v3.webm';
-  import Pride from './4- Tarek Ali_YT_Pride_Comments Are Everything_v2_OA.mp4';
   import Iconic from './YTC_Iconic_Minecraft_Frame2_20227_RZ_FQ_v2.mp4';
   import Pride2 from './YTC_TWIT_6-6_Frame1Intro_RZ.mp4';
   import MarioOrSonic from './YTCore_MarioOrSonic_RZ.mp4';
