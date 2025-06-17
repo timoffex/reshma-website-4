@@ -90,10 +90,8 @@
 
     <div class="wetransfer-gallery-grid__1x1">
       <GeneratedImage
-        image={{
-          alt: 'Marina Abramovic quote',
-          ...MarinaAbramovic
-        }}
+        image={MarinaAbramovic}
+        alt="Marina Abramovic quote"
         sizes={gridColSizesList}
         imgClass="fill-cover"
       />

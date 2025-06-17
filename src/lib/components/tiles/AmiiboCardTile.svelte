@@ -13,10 +13,8 @@
       {#snippet front()}
         <GeneratedImage
           imgClass="fill rounded-border image-color-on-hover"
-          image={{
-            alt: 'Backside of an Animal Crossing Amiibo card',
-            ...AmiiboBack
-          }}
+          image={AmiiboBack}
+          alt="Backside of an Animal Crossing Amiibo card"
           sizes={gridBSizesList(1)}
         />
       {/snippet}
@@ -24,10 +22,8 @@
       {#snippet back()}
         <GeneratedImage
           imgClass="fill rounded-border"
-          image={{
-            alt: 'Backside of an Animal Crossing Amiibo card',
-            ...AmiiboFront
-          }}
+          image={AmiiboFront}
+          alt="Backside of an Animal Crossing Amiibo card"
           sizes={gridBSizesList(1)}
         />
       {/snippet}

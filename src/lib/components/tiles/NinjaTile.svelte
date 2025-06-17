@@ -12,10 +12,8 @@
 >
   <GeneratedImage
     imgClass="fill-contain"
-    image={{
-      alt: 'Ninja (streamer)',
-      ...NinjaLogo
-    }}
+    image={NinjaLogo}
+    alt="Ninja (streamer)"
     sizes={gridASizesList(3)}
   />
 </a>

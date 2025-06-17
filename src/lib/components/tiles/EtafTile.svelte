@@ -12,10 +12,8 @@
 >
   <GeneratedImage
     imgClass="fill-contain image-color-on-hover"
-    image={{
-      alt: 'Elizabeth Taylor AIDS Foundation',
-      ...EtafLogo
-    }}
+    image={EtafLogo}
+    alt="Elizabeth Taylor AIDS Foundation"
     sizes={gridASizesList(3)}
   />
 </a>

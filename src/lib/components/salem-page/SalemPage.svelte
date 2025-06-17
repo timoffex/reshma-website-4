@@ -30,10 +30,8 @@
   <Navbar>
     {#snippet logo()}
       <GeneratedImage
-        image={{
-          alt: '',
-          ...SalemLogos
-        }}
+        image={SalemLogos}
+        alt=""
         imgClass="fill-contain-left"
         sizes={halfMainContentSizesList}
       />

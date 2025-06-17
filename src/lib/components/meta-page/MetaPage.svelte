@@ -10,10 +10,8 @@
     {#snippet logo()}
       <GeneratedImage
         imgClass="fill-contain-left"
-        image={{
-          alt: 'Meta',
-          ...MetaBlueprint
-        }}
+        image={MetaBlueprint}
+        alt="Meta"
         sizes={halfMainContentSizesList}
       />
     {/snippet}

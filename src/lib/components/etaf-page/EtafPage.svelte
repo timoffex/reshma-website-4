@@ -17,10 +17,8 @@
     {#snippet logo()}
       <GeneratedImage
         imgClass="fill-contain-left"
-        image={{
-          alt: 'Elizabeth Taylor AIDS Foundation',
-          ...EtafLogoColor
-        }}
+        image={EtafLogoColor}
+        alt="Elizabeth Taylor AIDS Foundation"
         sizes={halfMainContentSizesList}
       />
     {/snippet}

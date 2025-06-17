@@ -10,10 +10,8 @@
   {#snippet content()}
     <GeneratedImage
       imgClass="fill-cover image-color-on-hover"
-      image={{
-        alt: 'Wattam',
-        ...Wattam
-      }}
+      image={Wattam}
+      alt="Wattam"
       sizes={gridBSizesList(2)}
     />
   {/snippet}

@@ -12,10 +12,8 @@
 >
   <GeneratedImage
     imgClass="fill-contain image-color-on-hover"
-    image={{
-      alt: 'Meta',
-      ...MetaBlueprint
-    }}
+    image={MetaBlueprint}
+    alt="Meta"
     sizes={gridASizesList(3)}
   />
 </a>
