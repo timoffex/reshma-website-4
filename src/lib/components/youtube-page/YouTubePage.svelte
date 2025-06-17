@@ -1,8 +1,5 @@
 <script>
   import Navbar from '$lib/components/navigation/Navbar.svelte';
-  import { EtafLogoColor } from '$lib/generated-images';
-  import { gridASizesList, halfMainContentSizesList } from '$lib/layout/layout';
-  import GeneratedImage from '$lib/widgets/GeneratedImage.svelte';
 
   import ICYMI1 from './ICYMI_saltwaterstitches_9x16_RZ.mp4';
   import ICYMI2 from './ICYMI_frogphone_9x16_RZ_v2.mp4';
@@ -37,18 +34,16 @@
       In 2020, I was brought on board XX Artists' Design team as a Motion
       Designer. I worked as part of a team of designers, illustrators,
       copywriters and account managers to deliver top of the line content for
-      social in response to the ever-evolving zeitgeist of online culture. 
-      Our team was awarded <a
-      href="https://winners.webbyawards.com/2022/social/features/best-overall-social-presence-brand/220973/best-overall-social-presence-youtube-social"
-      class="bottom-tile__link">Best Overall Social Presence</a
-      > 
-      by the webby awards 
-      in 2022 as YouTube's agency of record. 
+      social in response to the ever-evolving zeitgeist of online culture. Our
+      team was awarded <a
+        href="https://winners.webbyawards.com/2022/social/features/best-overall-social-presence-brand/220973/best-overall-social-presence-youtube-social"
+        class="bottom-tile__link">Best Overall Social Presence</a
+      >
+      by the webby awards in 2022 as YouTube's agency of record.
     </p>
     <p class="text-align-center">
-      <a
-        href="/youtube-gaming"
-        class="bottom-tile__link">See my work for YouTube Gaming here.</a
+      <a href="/youtube-gaming" class="bottom-tile__link"
+        >See my work for YouTube Gaming here.</a
       >
     </p>
     <p class="text-align-right text-small">
@@ -82,21 +77,20 @@
     <div class="yt-grid__9x16">{@render autoVideo(CreatorMilestone)}</div>
     <div class="yt-grid__9x16">{@render autoVideo(MarioOrSonic)}</div>
 
-     <!-- Row 3 -->
+    <!-- Row 3 -->
     <div class="yt-grid__1x1">{@render autoVideo(OverheardOnYT)}</div>
     <div class="yt-grid__1x1">{@render autoVideo(YTGPride)}</div>
     <div class="yt-grid__1x1">{@render autoVideo(Slideshow)}</div>
 
-     <!-- Row 4 -->
-     <div class="yt-grid__9x16">{@render autoVideo(Pride2)}</div>
-     <div class="yt-grid__9x16">{@render autoVideo(YTGGTC)}</div>
-     <div class="yt-grid__9x16">{@render autoVideo(YTMShortsList)}</div>
+    <!-- Row 4 -->
+    <div class="yt-grid__9x16">{@render autoVideo(Pride2)}</div>
+    <div class="yt-grid__9x16">{@render autoVideo(YTGGTC)}</div>
+    <div class="yt-grid__9x16">{@render autoVideo(YTMShortsList)}</div>
 
-      <!-- Row 5 -->
-      <div class="yt-grid__1x1">{@render autoVideo(Calendar)}</div>
-      <div class="yt-grid__1x1">{@render autoVideo(ICYMISticker)}</div>
-      <div class="yt-grid__1x1">{@render autoVideo(Slideshow2)}</div>
-
+    <!-- Row 5 -->
+    <div class="yt-grid__1x1">{@render autoVideo(Calendar)}</div>
+    <div class="yt-grid__1x1">{@render autoVideo(ICYMISticker)}</div>
+    <div class="yt-grid__1x1">{@render autoVideo(Slideshow2)}</div>
   </div>
 </div>
 
