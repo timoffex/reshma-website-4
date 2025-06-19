@@ -33,7 +33,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@lottiefiles/lottie-player": "^1.7.1",
-		"blurhash": "^2.0.5"
+		"@lottiefiles/lottie-player": "^1.7.1"
 	}
 }
