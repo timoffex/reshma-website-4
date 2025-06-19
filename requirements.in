@@ -1,5 +1,6 @@
-blurhash-python
-
 # CLI utilities.
 fire
 rich
+
+# Images.
+pillow
