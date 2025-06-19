@@ -16,3 +16,5 @@ vite.config.ts.timestamp-*
 
 # Generated image files.
 static/images/**
+src/lib/generated-images.ts
+
