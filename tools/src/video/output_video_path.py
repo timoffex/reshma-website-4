@@ -6,13 +6,13 @@ from typing import final, override
 from src.media import output_media_path
 
 
-ROOT_FOLDER = pathlib.Path("static/images/")
-_URL_BASE = "/images"
+ROOT_FOLDER = pathlib.Path("static/videos/")
+_URL_BASE = "/videos"
 
 
 @final
-class OutputImagePath(output_media_path.OutputMediaPath):
-    """Path to a generated image."""
+class OutputVideoPath(output_media_path.OutputMediaPath):
+    """Path to a generated video."""
 
     @override
     @classmethod
@@ -27,4 +27,4 @@ class OutputImagePath(output_media_path.OutputMediaPath):
     @override
     @classmethod
     def known_extensions(cls) -> list[str]:
-        return ["webp", "jpeg"]
+        return ["webm", "mp4"]

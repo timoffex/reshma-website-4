@@ -18,7 +18,7 @@ def find_all() -> ImageFiles:
 
     for path in source_image_path.ROOT_FOLDER.iterdir():
         try:
-            src = source_image_path.from_path(path)
+            src = source_image_path.SourceImagePath.from_path(path)
         except ValueError:
             bad_sources.append(path)
         else:
@@ -26,7 +26,7 @@ def find_all() -> ImageFiles:
 
     for path in output_image_path.ROOT_FOLDER.iterdir():
         try:
-            out = output_image_path.from_path(path)
+            out = output_image_path.OutputImagePath.from_path(path)
         except ValueError:
             bad_outputs.append(path)
         else:
