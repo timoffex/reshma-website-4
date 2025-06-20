@@ -3,14 +3,14 @@ from __future__ import annotations
 import pathlib
 from typing import final, override
 
-from src.media import source_media_path
+from src import media
 
 
 ROOT_FOLDER = pathlib.Path("images/")
 
 
 @final
-class SourceImagePath(source_media_path.SourceMediaPath):
+class SourceImagePath(media.SourceMediaPath):
     """Path to a source image."""
 
     @override

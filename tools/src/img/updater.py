@@ -10,10 +10,11 @@ import rich
 import rich.console
 from rich.markup import escape
 
-from . import image_database
-from . import generated_images_file
-from . import source_image_path
-from . import output_image_path
+from src import media
+
+from .generated_images_file import GeneratedImagesEntry, GeneratedImagesInfo
+from .source_image_path import SourceImagePath
+from .output_image_path import OutputImagePath
 
 _SCALES = [1.0, 0.8, 0.5, 0.2]
 
@@ -24,11 +25,11 @@ class Updater:
     def __init__(self, *, tool_name: str) -> None:
         self._tool_name = tool_name
         self._console = rich.console.Console(stderr=True)
-        self._initial_files = image_database.find_all()
+        self._initial_files = media.find_all(SourceImagePath, OutputImagePath)
 
-        self._output_info = generated_images_file.GeneratedImagesInfo()
+        self._output_info = GeneratedImagesInfo()
         self._stale = set(self._initial_files.output_paths)
-        self._unchanged: set[output_image_path.OutputImagePath] = set()
+        self._unchanged: set[OutputImagePath] = set()
 
     def run(self) -> None:
         """Update generated images."""
@@ -104,7 +105,7 @@ class Updater:
                     outputs_for_source.append(output)
 
                 self._output_info.add(
-                    generated_images_file.GeneratedImagesEntry(
+                    GeneratedImagesEntry(
                         source_name=source.name,
                         aspect_ratio=source_img.width / source_img.height,
                         output_paths=outputs_for_source,
@@ -113,12 +114,12 @@ class Updater:
 
     def _save_scaled_image(
         self,
-        source: source_image_path.SourceImagePath,
+        source: SourceImagePath,
         image: Image.Image,
         *,
         scale: float,
         extension: str,
-    ) -> output_image_path.OutputImagePath:
+    ) -> OutputImagePath:
         """Save a rescaled version of the given image.
 
         Does nothing if the rescaled version is up-to-date.
@@ -155,7 +156,7 @@ class Updater:
         # Compute the hash.
         hash = hashlib.shake_128(output_image_bytes.getbuffer()).hexdigest(5)
 
-        output = output_image_path.OutputImagePath.create(
+        output = OutputImagePath.create(
             name=source.name,
             width=output_width,
             sha=hash,

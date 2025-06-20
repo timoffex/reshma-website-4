@@ -3,7 +3,7 @@ from __future__ import annotations
 import pathlib
 from typing import final, override
 
-from src.media import output_media_path
+from src import media
 
 
 ROOT_FOLDER = pathlib.Path("static/images/")
@@ -11,7 +11,7 @@ _URL_BASE = "/images"
 
 
 @final
-class OutputImagePath(output_media_path.OutputMediaPath):
+class OutputImagePath(media.OutputMediaPath):
     """Path to a generated image."""
 
     @override

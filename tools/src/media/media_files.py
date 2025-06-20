@@ -2,37 +2,45 @@ from __future__ import annotations
 
 import dataclasses
 import pathlib
+from typing import Generic, TypeVar
 
-from . import output_image_path
-from . import source_image_path
+from . import output_media_path
+from . import source_media_path
 
 
-def find_all() -> ImageFiles:
-    """Returns paths to all existing files relevant to image generation."""
+_Source = TypeVar("_Source", bound=source_media_path.SourceMediaPath)
+_Output = TypeVar("_Output", bound=output_media_path.OutputMediaPath)
 
-    sources: list[source_image_path.SourceImagePath] = []
-    outputs: list[output_image_path.OutputImagePath] = []
+
+def find_all(
+    source_type: type[_Source],
+    output_type: type[_Output],
+) -> MediaFiles[_Source, _Output]:
+    """Returns paths to all source and generated media of a type."""
+
+    sources: list[_Source] = []
+    outputs: list[_Output] = []
 
     bad_sources: list[pathlib.Path] = []
     bad_outputs: list[pathlib.Path] = []
 
-    for path in source_image_path.ROOT_FOLDER.iterdir():
+    for path in source_type.root_folder().iterdir():
         try:
-            src = source_image_path.SourceImagePath.from_path(path)
+            src = source_type.from_path(path)
         except ValueError:
             bad_sources.append(path)
         else:
             sources.append(src)
 
-    for path in output_image_path.ROOT_FOLDER.iterdir():
+    for path in output_type.root_folder().iterdir():
         try:
-            out = output_image_path.OutputImagePath.from_path(path)
+            out = output_type.from_path(path)
         except ValueError:
             bad_outputs.append(path)
         else:
             outputs.append(out)
 
-    return ImageFiles(
+    return MediaFiles(
         source_paths=sorted(sources),
         bad_source_paths=sorted(bad_sources),
         output_paths=sorted(outputs),
@@ -41,26 +49,26 @@ def find_all() -> ImageFiles:
 
 
 @dataclasses.dataclass(frozen=True)
-class ImageFiles:
-    source_paths: list[source_image_path.SourceImagePath]
-    """Paths to existing source image files, sorted."""
+class MediaFiles(Generic[_Source, _Output]):
+    source_paths: list[_Source]
+    """Paths to existing source media files, sorted."""
 
     bad_source_paths: list[pathlib.Path]
     """Invalid files in the source folder, sorted."""
 
-    output_paths: list[output_image_path.OutputImagePath]
-    """Paths to existing output image files, sorted."""
+    output_paths: list[_Output]
+    """Paths to existing output media files, sorted."""
 
     bad_output_paths: list[pathlib.Path]
     """Invalid files in the output folder, sorted"""
 
     @property
-    def sources_by_name(self) -> dict[str, source_image_path.SourceImagePath]:
+    def sources_by_name(self) -> dict[str, _Source]:
         """A dictionary mapping source names to existing source paths."""
         return {src.name: src for src in self.source_paths}
 
     @property
-    def orphaned_outputs(self) -> list[output_image_path.OutputImagePath]:
+    def orphaned_outputs(self) -> list[_Output]:
         """Output files with no corresponding source path."""
         return [
             out
@@ -74,7 +82,7 @@ class ImageFiles:
         name: str,
         width: int,
         extension: str,
-    ) -> output_image_path.OutputImagePath | None:
+    ) -> _Output | None:
         """Find an output file by name, width and extension."""
         for output in self.output_paths:
             if (

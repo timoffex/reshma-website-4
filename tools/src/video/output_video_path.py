@@ -3,7 +3,7 @@ from __future__ import annotations
 import pathlib
 from typing import final, override
 
-from src.media import output_media_path
+from src import media
 
 
 ROOT_FOLDER = pathlib.Path("static/videos/")
@@ -11,7 +11,7 @@ _URL_BASE = "/videos"
 
 
 @final
-class OutputVideoPath(output_media_path.OutputMediaPath):
+class OutputVideoPath(media.OutputMediaPath):
     """Path to a generated video."""
 
     @override
