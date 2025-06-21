@@ -117,7 +117,6 @@ class Updater:
         Args:
             source: The source image path.
             image: The opened Image object.
-            name: The name to use for the output image.
             scale: The scaling factor to use.
             extension: The output format.
 
