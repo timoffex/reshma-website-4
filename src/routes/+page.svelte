@@ -16,7 +16,7 @@
   import MotionGraphicReel from '$lib/components/tiles/MotionGraphicReel.svelte';
   import PokemonCardTile from '$lib/components/tiles/pokemon-card/PokemonCardTile.svelte';
   import AmiiboCardTile from '$lib/components/tiles/AmiiboCardTile.svelte';
-  import SalemVideoTile from '$lib/components/tiles/salem/SalemVideoTile.svelte';
+  import SalemVideoTile from '$lib/components/tiles/SalemVideoTile.svelte';
   import MusicTile from '$lib/components/tiles/music/MusicTile.svelte';
   import MarqueeText from '$lib/widgets/MarqueeText.svelte';
   import WeTransferTile from '$lib/components/tiles/WeTransferTile.svelte';
