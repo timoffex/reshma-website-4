@@ -9,6 +9,15 @@ from .output_image_path import OutputImagePath
 _TS_PATH = pathlib.Path("src/lib/generated-images.ts")
 
 
+@dataclasses.dataclass(frozen=True)
+class GeneratedImagesEntry:
+    """An entry in the generates-images.ts file."""
+
+    source_name: str
+    aspect_ratio: float
+    output_paths: list[OutputImagePath]
+
+
 class GeneratedImagesInfo:
     """An object to construct the generated-images.ts file."""
 
@@ -55,15 +64,6 @@ def _ts_sources_list(
     )
 
     return f"[{sources}]"
-
-
-@dataclasses.dataclass(frozen=True)
-class GeneratedImagesEntry:
-    """An entry in the generates-images.ts file."""
-
-    source_name: str
-    aspect_ratio: float
-    output_paths: list[OutputImagePath]
 
 
 def _kebab_to_camel(kebab: str) -> str:
