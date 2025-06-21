@@ -77,6 +77,32 @@ class MediaFiles(Generic[_Source, _Output]):
             out for out in self.output_paths if out.name not in self.sources_by_name
         ]
 
+    def get_up_to_date(
+        self,
+        source: _Source,
+        *,
+        width: int,
+        extension: str,
+    ) -> _Output | None:
+        """Returns an up-to-date output for the parameters.
+
+        Args:
+            source: The source file.
+            width: The output width to search for.
+            extension: The output extension to search for.
+        """
+        output = self.find_output(
+            name=source.name,
+            width=width,
+            extension=extension,
+        )
+        if not output:
+            return None
+
+        source_mtime = source.path.stat().st_mtime
+        output_mtime = output.path.stat().st_mtime
+        return output if output_mtime > source_mtime else None
+
     def find_output(
         self,
         *,

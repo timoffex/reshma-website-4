@@ -75,7 +75,7 @@ class Updater:
                 if not source_img.has_transparency_data:
                     extensions = ["jpeg", "webp"]
                 elif (
-                    (extrema := source_img.getchannel("A").getextrema())
+                    (extrema := source_img.getchannel("A").getextrema())  #
                     and extrema[0] == extrema[1]
                 ):
                     source_img = source_img.convert(mode="RGB")
@@ -127,11 +127,11 @@ class Updater:
         output_height = int(scale * image.height)
 
         # Skip if the image is up to date.
-        if (old_output := self._initial_files.find_output(
-            name=source.name,
+        if old_output := self._initial_files.get_up_to_date(
+            source,
             width=output_width,
             extension=extension,
-        )) and old_output.path.stat().st_mtime > source.path.stat().st_mtime:
+        ):
             self._unchanged.add(old_output)
             return old_output
 
@@ -149,9 +149,7 @@ class Updater:
             extension=extension,
         )
 
-        self._console.print(
-            f"Generating [cyan]{escape(str(output.path))}[/cyan]"
-        )
+        self._console.print(f"Generating [cyan]{escape(str(output.path))}[/cyan]")
 
         # Save the image to file.
         with output.path.open("wb") as f:
