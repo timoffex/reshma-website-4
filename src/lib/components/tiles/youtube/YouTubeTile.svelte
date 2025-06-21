@@ -4,14 +4,22 @@
 
 <a
   href="/youtube"
-  class="display-block tile grid-area-youtube bg-black padding-2 ytg-gradient-1"
+  class={[
+    'display-block',
+    'tile',
+    'grid-area-youtube',
+    'bg-black',
+    'padding-2',
+    'ytg-gradient-1',
+    'image-color-on-hover-2'
+  ]}
   use:fadeInOut
 >
   <div class="fill padding-2">
     <enhanced:img
       alt="YouTube Core"
       src="$lib/components/youtube-logo.svg"
-      class="fill-contain image-color-on-hover-2"
+      class="fill-contain"
     />
   </div>
 </a>
@@ -24,10 +32,7 @@
       &:hover,
       &:focus-visible {
         color: white;
-        background: radial-gradient(
-          circle,
-          rgba(0 92 255) 100%
-        );
+        background: radial-gradient(circle, rgba(0 92 255) 100%);
       }
     }
   }
