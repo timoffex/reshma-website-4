@@ -61,16 +61,7 @@ class Updater:
         sys.exit(1)
 
     def _generate_images(self) -> None:
-        """Generate scaled and converted versions of all source images.
-
-        Also writes the generated-images.ts file.
-
-        Args:
-            images: All detected image files.
-
-        Returns:
-            The set of generated or existing paths.
-        """
+        """Generate scaled and converted versions of all source images."""
         for source in self._initial_files.source_paths:
             with Image.open(source.path) as source_img:
                 outputs_for_source = []
