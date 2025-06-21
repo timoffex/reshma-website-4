@@ -100,7 +100,7 @@ class OutputMediaPath(abc.ABC):
         if path.parent != cls.root_folder():
             raise ValueError(str(path))
 
-        name_pat = r"[a-z\-]+"
+        name_pat = r"[a-z][a-z\-0-9]*"
         width_pat = r"\d+"
         hash_pat = r"[a-z0-9]{10}"
         ext_pat = "|".join(cls.known_extensions())

@@ -24,6 +24,9 @@ def find_all(
     bad_sources: list[pathlib.Path] = []
     bad_outputs: list[pathlib.Path] = []
 
+    source_type.root_folder().mkdir(parents=True, exist_ok=True)
+    output_type.root_folder().mkdir(parents=True, exist_ok=True)
+
     for path in source_type.root_folder().iterdir():
         try:
             src = source_type.from_path(path)
@@ -71,9 +74,7 @@ class MediaFiles(Generic[_Source, _Output]):
     def orphaned_outputs(self) -> list[_Output]:
         """Output files with no corresponding source path."""
         return [
-            out
-            for out in self.output_paths
-            if out.name not in self.sources_by_name
+            out for out in self.output_paths if out.name not in self.sources_by_name
         ]
 
     def find_output(

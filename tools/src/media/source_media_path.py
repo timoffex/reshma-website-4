@@ -40,7 +40,7 @@ class SourceMediaPath(abc.ABC):
         if path.parent != cls.root_folder():
             raise ValueError(str(path))
 
-        name_pattern = r"[a-z\-]+"
+        name_pattern = r"[a-z][a-z\-0-9]*"
         ext_pattern = "|".join(cls.known_extensions())
         match = re.fullmatch(rf"({name_pattern})\.({ext_pattern})", path.name)
         if not match:
