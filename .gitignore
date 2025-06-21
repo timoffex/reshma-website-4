@@ -14,7 +14,8 @@ vite.config.ts.timestamp-*
 # Python virtual environment.
 .venv/**
 
-# Generated image files.
+# Generated media files.
 static/images/**
+static/videos/**
 src/lib/generated-images.ts
-
+src/lib/generated-videos.ts
