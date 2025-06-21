@@ -1,15 +1,17 @@
 <script>
   import Navbar from '$lib/components/navigation/Navbar.svelte';
   import { EtafLogoColor } from '$lib/generated-images';
+  import {
+    EtafByTheNumbers1,
+    EtafByTheNumbers2,
+    EtafLendAHand3,
+    EtafLendAHand4,
+    EtafSunnyHostin,
+    EtafTakeAction
+  } from '$lib/generated-videos';
   import { gridASizesList, halfMainContentSizesList } from '$lib/layout/layout';
   import GeneratedImage from '$lib/widgets/GeneratedImage.svelte';
-
-  import SunnyHostin from './Brand_ETAF_SunnyHostin IAS Spotlight_RZ_16702_Silent_Trimmed.mp4';
-  import ByTheNumbers1 from './ETAF_By The Numbers_1_RZ.mp4';
-  import ByTheNumbers2 from './ETAF_By The Numbers_2_RZ.mp4';
-  import LendAHand3 from './ETAF_LendAHand_3_IG_RZ_v3.mp4';
-  import LendAHand4 from './ETAF_LendAHand_4_IG_RZ_v1.mp4';
-  import TakeAction from './ETAF_Take Action_IL_IG_v1_RZ.mp4';
+  import VideoAnimation from '$lib/widgets/VideoAnimation.svelte';
 </script>
 
 <div class="main-content">
@@ -40,28 +42,27 @@
   </div>
 
   <div class="etaf-grid">
-    {#snippet autoVideo(src)}
-      <video
-        class="fill-cover display-block"
-        autoplay
-        loop
-        muted
-        playsinline
-        tabindex={-1}
-      >
-        <source {src} />
-      </video>
-    {/snippet}
-
     <!-- Row 1 -->
-    <div class="etaf-grid__1x1">{@render autoVideo(SunnyHostin)}</div>
-    <div class="etaf-grid__1x1">{@render autoVideo(ByTheNumbers1)}</div>
-    <div class="etaf-grid__1x1">{@render autoVideo(ByTheNumbers2)}</div>
+    <div class="etaf-grid__1x1">
+      <VideoAnimation video={EtafSunnyHostin} class="fill-cover" />
+    </div>
+    <div class="etaf-grid__1x1">
+      <VideoAnimation video={EtafByTheNumbers1} class="fill-cover" />
+    </div>
+    <div class="etaf-grid__1x1">
+      <VideoAnimation video={EtafByTheNumbers2} class="fill-cover" />
+    </div>
 
     <!-- Row 2 -->
-    <div class="etaf-grid__1x1">{@render autoVideo(LendAHand3)}</div>
-    <div class="etaf-grid__1x1">{@render autoVideo(LendAHand4)}</div>
-    <div class="etaf-grid__1x1">{@render autoVideo(TakeAction)}</div>
+    <div class="etaf-grid__1x1">
+      <VideoAnimation video={EtafLendAHand3} class="fill-cover" />
+    </div>
+    <div class="etaf-grid__1x1">
+      <VideoAnimation video={EtafLendAHand4} class="fill-cover" />
+    </div>
+    <div class="etaf-grid__1x1">
+      <VideoAnimation video={EtafTakeAction} class="fill-cover" />
+    </div>
 
     <!-- Row 3 -->
     <div class="etaf-grid__1x1">
