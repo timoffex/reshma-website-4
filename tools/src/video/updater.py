@@ -115,6 +115,10 @@ class Updater:
         output_width = int(scale * source_width)
         output_height = int(scale * source_height)
 
+        # h.264 requires dimensions to be even.
+        output_width += output_width % 2
+        output_height += output_height % 2
+
         # Skip if the video is up to date.
         if old_output := self._initial_files.get_up_to_date(
             source,
