@@ -1,14 +1,9 @@
 <script>
-  import Navbar from '../navigation/Navbar.svelte';
+  import Navbar from '$lib/components/navigation/Navbar.svelte';
+  import { YtgBento1, YtgBento2, YtgBento3 } from '$lib/generated-videos';
+  import VideoAnimation from '$lib/widgets/VideoAnimation.svelte';
 
   import YtgLogo from './ytg-logo.svg';
-
-  import YtgBento1Mp4 from './ytg-bento-1.mp4';
-  import YtgBento1Webm from './ytg-bento-1.webm';
-  import YtgBento2Mp4 from './ytg-bento-2.mp4';
-  import YtgBento2Webm from './ytg-bento-2.webm';
-  import YtgBento3Mp4 from './ytg-bento-3-faststart.mp4';
-  import YtgBento3Webm from './ytg-bento-3.webm';
 </script>
 
 <div class="main-content">
@@ -20,10 +15,7 @@
 
   <div class="yt-gaming-grid">
     <div class="yt-gaming-grid__1x1">
-      <video class="fill-cover" autoplay loop muted playsinline tabindex={-1}>
-        <source src={YtgBento1Webm} type="video/webm" />
-        <source src={YtgBento1Mp4} type="video/mp4" />
-      </video>
+      <VideoAnimation video={YtgBento1} class="fill-cover" />
     </div>
     <div class="yt-gaming-grid__1x1 yt-gaming-grid__text ytg-gradient-1">
       <p>
@@ -38,10 +30,7 @@
     </div>
 
     <div class="yt-gaming-grid__16x9">
-      <video class="fill-cover" autoplay loop muted playsinline tabindex={-1}>
-        <source src={YtgBento2Webm} type="video/webm" />
-        <source src={YtgBento2Mp4} type="video/mp4" />
-      </video>
+      <VideoAnimation video={YtgBento2} class="fill-cover" />
     </div>
 
     <div class="yt-gaming-grid__1x1 yt-gaming-grid__text ytg-gradient-2">
@@ -52,10 +41,7 @@
       </p>
     </div>
     <div class="yt-gaming-grid__1x1">
-      <video class="fill-cover" autoplay loop muted playsinline tabindex={-1}>
-        <source src={YtgBento3Webm} type="video/webm" />
-        <source src={YtgBento3Mp4} type="video/mp4" />
-      </video>
+      <VideoAnimation video={YtgBento3} class="fill-cover" />
     </div>
   </div>
 
