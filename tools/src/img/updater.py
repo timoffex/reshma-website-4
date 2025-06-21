@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import hashlib
 import io
 import itertools
 import sys
@@ -144,13 +143,10 @@ class Updater:
         output_image_bytes = io.BytesIO()
         scaled_image.save(output_image_bytes, format=extension)
 
-        # Compute the hash.
-        hash = hashlib.shake_128(output_image_bytes.getbuffer()).hexdigest(5)
-
-        output = OutputImagePath.create(
+        output = OutputImagePath.from_content(
+            content=output_image_bytes.getbuffer(),
             name=source.name,
             width=output_width,
-            sha=hash,
             extension=extension,
         )
 

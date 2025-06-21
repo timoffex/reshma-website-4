@@ -3,6 +3,7 @@ from __future__ import annotations
 import abc
 import dataclasses
 import functools
+import hashlib
 import pathlib
 import re
 from typing import Self
@@ -49,6 +50,37 @@ class OutputMediaPath(abc.ABC):
             name=name,
             width=width,
             sha=sha,
+            extension=extension,
+        )
+
+    @classmethod
+    def from_content(
+        cls,
+        content: pathlib.Path | memoryview,
+        name: str,
+        width: int,
+        extension: str,
+    ) -> Self:
+        """Create an output media path, computing its hash from the content.
+
+        Args:
+            content: Source file or buffer whose content will be hashed.
+            name: The name of the source file (without the extension).
+            width: The output width in pixels.
+            extension: The file extension.
+        """
+        if isinstance(content, pathlib.Path):
+            with content.open("rb") as f:
+                # shake_128 overrides the hexdigest methods incompatibly,
+                # but file_digest() doesn't actually need them.
+                hash = hashlib.file_digest(f, hashlib.shake_128).hexdigest(5)  # type: ignore
+        else:
+            hash = hashlib.shake_128(content).hexdigest(5)
+
+        return cls.create(
+            name=name,
+            width=width,
+            sha=hash,
             extension=extension,
         )
 
